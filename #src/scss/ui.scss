@@ -4,10 +4,10 @@
 .h4,
 .h5,
 .h6 {
-	margin: 0;
-	color: $color-blue;
-	font-weight: 600;
-	line-height: 1.35;
+   margin: 0;
+   color: $color-blue;
+   font-weight: 600;
+   line-height: 1.35;
 }
 .h1_white,
 .h2_white,
@@ -15,32 +15,32 @@
 .h4_white,
 .h5_white,
 .h6_white {
-	color: $color-white;
+   color: $color-white;
 }
 .h1 {
-	font-size: 30px;
+   font-size: 32px;
 }
 .h2 {
-	font-size: 26px;
+   font-size: 28px;
 }
 .h3 {
-	font-size: 22px;
+   font-size: 22px;
 }
 .h4 {
-	font-size: 20px;
+   font-size: 20px;
 }
 .h5 {
-	font-size: 18px;
+   font-size: 18px;
 }
 .h6 {
-	font-size: 16px;
+   font-size: 16px;
 }
 .logo {
    display: flex;
    align-items: center;
 
    &__name {
-		width: 100%;
+      width: 100%;
       max-width: 440px;
       margin: 0px 0px 0px 32px;
       font-size: 20px;
@@ -49,135 +49,423 @@
    }
 }
 .main-title {
-	font-size: 32px;
-	color: $color-blue;
-	font-weight: 600;
+   font-size: 32px;
+   color: $color-blue;
+   font-weight: 600;
 }
 .link-more {
-	color: $color-black;
-	text-decoration: underline;
+   color: $color-black;
+   text-decoration: underline;
 
-	&:hover {
-		color: $color-black;
-		opacity: 0.5;
-	}
+   &:hover {
+      color: $color-black;
+      opacity: 0.5;
+   }
+}
+.link-decor {
+   font-size: 18px;
+   color: $color-blue;
+   font-weight: 600;
+   position: relative;
+
+   &:before {
+      content: '';
+      width: 0%;
+      height: 2px;
+      background-color: $color-blue;
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+   }
+
+   &:hover {
+      color: $color-blue;
+      &:before {
+         width: 100%;
+      }
+   }
 }
 .breadcrumb {
-	padding: 40px 0 20px;
-	margin: 0;
+   padding: 40px 0 20px;
+   margin: 0;
 }
 .breadcrumb-item {
-	a {
-		font-weight: 500;
-		color: $color-gray;
+   a {
+      font-weight: 500;
+      color: $color-gray;
 
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+      &:hover {
+         text-decoration: underline;
+      }
+   }
 
-	&.active {
-		color: $color-gray;
-	}
+   &.active {
+      color: $color-gray;
+   }
 }
-.breadcrumb-item+.breadcrumb-item::before {
-	content: var(--bs-breadcrumb-divider, "—");
+.breadcrumb-item + .breadcrumb-item::before {
+   content: var(--bs-breadcrumb-divider, '—');
 }
 .sidebar {
+   &__nav {
+      background-color: #efefef;
+      box-shadow: 0px 1px 1px rgba(29, 26, 168, 0.24);
+      padding: 32px;
+   }
 
-	&__nav {
-		background-color: #EFEFEF;
-		padding: 32px;
-	}
+   &__list {
+      padding-left: 0;
+      margin-bottom: 0;
 
-	&__title {
-		font-size: 18px;
-		font-weight: 500;
-		color: $color-black;
-	}
+      li:not(:last-child) {
+         margin: 0px 0px 16px 0px;
+      }
+   }
 
-	&__list {
-		padding-left: 24px;
-		margin-bottom: 0;
+   &__link {
+      font-size: 18px;
+      color: $color-black;
 
-		li:not(:last-child) {
-			margin: 0px 0px 16px 0px;
-		}
-	}
+      &.active {
+         color: $color-blue;
+         font-weight: 700;
+         pointer-events: none;
+      }
 
-	&__link {
-		font-size: 18px;
-		color: $color-black;
-		font-weight: 500;
+      &:hover {
+         color: $color-blue;
+      }
+   }
 
-		&.active {
-			color: $color-blue;
-			font-weight: 700;
-			pointer-events: none;
-		}
+   &__banner {
+      margin: 24px 0px 0px 0px;
 
-		&:hover {
-			color: $color-blue;
-		}
-	}
-
-	&__banner {
-		margin: 24px 0px 0px 0px;
-	}
-}
-
-.employees {
-	margin: 0px 0px 64px 0px;	
+      @media (max-width: $md2+px) {
+         display: none;
+      }
+   }
 }
 .item-employee {
-	border: 2px solid #DCDCDC;
-	display: flex;
-	margin: 0px 0px 32px 0px;
+   height: 100%;
+   border: 2px solid $color-gray-light;
+   display: flex;
+   margin: 0px 0px 32px 0px;
 
-	&:last-child {
-		margin: 0px 0px 0px 0px;
+   &:last-child {
+      margin: 0px 0px 0px 0px;
+   }
+
+   @media (max-width: $md3+px) {
+      flex-direction: column;
+		align-items: center;
+   }
+
+   &__body {
+      padding: 24px;
+
+      @media (max-width: $md4+px) {
+         padding: 15px;
+      }
+   }
+
+	&__photo {
+		width: 100%;
+		max-width: 260px;
 	}
 
-	@media (max-width: 700px) {
-		display: block;
-		&__photo {
-			text-align: center;
-		}
-	}
+   &__position {
+      color: $color-black;
+   }
 
-	&__body {
-		padding: 24px;
-		background-color: $color-white;
-	}
+   &__row {
+      font-weight: 500;
+      color: $color-black;
 
-	&__position {
-		color: $color-black;
-	}
+      i {
+         position: relative;
+         transform: translateY(-3px);
+         font-size: 24px;
+      }
+
+      a {
+         font-weight: 500;
+         color: $color-black;
+
+         &:hover {
+            color: $color-blue;
+         }
+      }
+
+      &:not(:last-child) {
+         margin: 0px 0px 20px 0px;
+      }
+   }
 }
-.item-employee-info {
+.item-sport {
+   height: 100%;
+   border: 2px solid $color-gray-light;
+   display: flex;
+   align-items: center;
+   padding: 24px;
 
-	&__row {
-		margin: 0px 0px 24px 0px;
-		font-weight: 500;
-		color: $color-black;
+   @media (max-width: $md4+px) {
+      padding: 15px;
+   }
+
+   &__icon {
+      margin: 0px 40px 0px 0px;
+
+      @media (max-width: $md4+px) {
+         margin: 0px 20px 0px 0px;
+
+         img {
+            max-width: 50px;
+         }
+      }
+   }
+
+   &__title {
+      color: $color-gray;
+   }
+
+   &__address {
+      font-size: 18px;
+      font-weight: 500;
+
+      &:not(:last-child) {
+         margin: 0px 0px 8px 0px;
+      }
+   }
+}
+.item-accordion {
+   &:not(:last-child) {
+      margin: 0px 0px 24px 0px;
+   }
+
+   &__button {
+      width: 100%;
+      padding: 16px 24px;
+      color: $color-blue;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $color-gray-light;
+
+      i:before {
+         font-size: 25px;
+         font-weight: 700 !important;
+         color: $color-blue;
+         transition: all 0.3s ease 0s;
+      }
+
+      &.collapsed {
+         i:before {
+            transform: rotate(180deg);
+         }
+      }
+   }
+
+   &__body {
+      padding: 24px;
+
+		@media (max-width: $md4+px) {
+			padding: 8px;
+		}
+   }
+}
+.group-recruitment-card {
+   height: 100%;
+   border: 2px solid $color-gray-light;
+   padding: 24px;
+
+   @media (max-width: $md4+px) {
+      padding: 15px;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin: 0px 0px 24px 0px;
+      }
+   }
+
+   &__title {
+      font-size: 14px;
+      color: $color-gray;
+   }
+
+   a {
+      color: $color-black;
+      font-weight: 500;
+
+      &:hover {
+         color: $color-blue;
+      }
+   }
+}
+.coach-card {
+   border: 2px solid $color-gray-light;
+   display: flex;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		border-color: $color-blue;
 
 		i {
-			position: relative;
-			transform: translateY(-3px);
-			font-size: 24px;
+			opacity: 1;
+			visibility: visible;
+			right: 18px;
 		}
+	}
 
-		a {
-			font-weight: 500;
-			color: $color-black;
+   &:not(:last-child) {
+      margin: 0px 0px 16px 0px;
+   }
 
-			&:hover {
-				color: $color-blue;
+	@media (max-width: $md3+px) {
+		flex-direction: column;
+		align-items: center;
+	}
+
+   &__photo {
+		width: 100%;
+		max-width: 270px;
+		padding: 16px 0 16px 16px;
+
+		@media (max-width: $md3+px) {
+			padding: 16px 16px 0 16px;
+		}
+   }
+
+   &__info {
+		flex: 1 1 auto;
+      padding: 24px;
+		position: relative;
+
+		i {
+			opacity: 0;
+			visibility: hidden;
+			font-size: 28px;
+			color: $color-blue;
+			position: absolute;
+			top: 12px;
+			right: 23px;
+			transition: all 0.3s ease 0s;
+
+			@media (max-width: $md2+px) {
+				opacity: 1;
+				visibility: visible;
+				right: 18px;
 			}
 		}
 
-		&:last-child {
-			margin: 0px 0px 0px 0px;
-		}
-	}
+      @media (max-width: $md4+px) {
+         padding: 15px;
+      }
+   }
+
+   &__position {
+      margin: 0px 40px 16px 0px;
+      font-size: 18px;
+      font-weight: 600;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin: 0px 0px 16px 0px;
+      }
+   }
+
+   &__title {
+      margin: 0px 0px 8px 0px;
+      font-size: 14px;
+      color: $color-gray;
+   }
+}
+.modal-coach {
+   max-width: 1120px;
+
+   &__content {
+      width: 100%;
+      padding: 60px 24px 24px;
+      background-color: $color-white;
+      border: none;
+      border-radius: 0;
+		flex-direction: row;
+
+      .btn-close {
+         width: 20px;
+         height: 20px;
+         color: $color-black;
+         padding: 0;
+         background-size: 20px;
+         opacity: 1;
+         position: absolute;
+         top: 20px;
+         right: 20px;
+
+			&:hover {
+				opacity: 0.5;
+			}
+			
+			&:focus {
+				box-shadow: none;
+			}
+      }
+
+      @media (min-width: 480px) {
+         margin: 0 8px;
+      }
+
+      @media (max-width: $md3+px) {
+         flex-direction: column;
+      }
+
+      @media (max-width: $md4+px) {
+         padding: 50px 15px 15px;
+
+         .btn-close {
+            top: 15px;
+            right: 15px;
+         }
+      }
+   }
+
+   &__photo {
+      margin: 0px 24px 0px 0px;
+		width: 100%;
+		max-width: 380px;
+
+      @media (max-width: $md3+px) {
+         margin: 0px auto 24px;
+      }
+   }
+
+   &__info {
+		flex: 1 1 auto;
+   }
+
+   &__position {
+      margin: 0px 0px 16px 0px;
+      font-size: 18px;
+      font-weight: 600;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin: 0px 0px 16px 0px;
+      }
+
+		div:not(:last-child) {
+         margin: 0px 0px 8px 0px;
+      }
+   }
+
+   &__title {
+      margin: 0px 0px 8px 0px;
+      font-size: 14px;
+      color: $color-gray;
+   }
 }

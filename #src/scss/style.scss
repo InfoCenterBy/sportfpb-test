@@ -38,6 +38,7 @@ $mainColor: #151516;
 @import "null";
 @import "variables";
 body {
+	background-color: #FCFCFC;
 	color: $mainColor;
 	&._lock {
 		overflow: hidden;
@@ -66,18 +67,21 @@ body {
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-@import "forms";
+// @import "forms";
 @import "ui";
+@import "simple-calendar";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 //@import "datepicker";
 //@import "lightgallery";
 //@import "pagging";
-@import "popup";
 @import "header";
 @import "footer";
-@import "home";
+@import "slider";
+@import "about";
+@import "sports-mass-work";
+@import "sportclub";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
 //<ОСНОВНОЙ БЛОК>====================================================================================================
@@ -170,121 +174,6 @@ body {
 		}
 	}
 }
-.slider-news {
-	padding: 20px 0 48px;
-	background-color: rgba(158, 158, 158, 0.15);
-
-	&__header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		margin: 0px 0px 8px 0px;
-	}
-
-	&__wrapper {
-		padding: 16px;
-		margin: 0 -16px;
-
-		.swiper-slide {
-			height: auto;
-		}
-	}
-
-	&__more {
-		margin: 8px 0px 0px 0px;
-		text-align: right;
-	}
-}
-.slider-news-control {
-	display: flex;
-
-	&__arrow {
-		width: 35px;
-		height: 35px;
-		background-color: $color-blue;
-		display: flex;
-		justify-content:center;
-		align-items: center;
-		cursor: pointer;
-		transition: all 0.3s ease 0s;
-
-		&:hover:not(.swiper-button-disabled) {
-			box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
-			background-color: $color-blue-dark;
-		}
-
-		i {
-			color: $color-white;
-		}
-	
-		&_next {
-			margin: 0px 0px 0px 8px;
-		}
-
-		&.swiper-button-disabled {
-			opacity: 0.5;
-			cursor: default;
-		}
-	}
-}
-.slider-news-item {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
-	position: relative;
-	transition: all 0.3s ease 0s;
-
-	&:hover {
-		box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.1);
-	}
-
-	&__date {
-		width: 90px;
-		height: 90px;
-		color: $color-white;
-		background: rgba(0, 44, 131, 0.88);
-		display: flex;
-		flex-direction: column;
-		justify-content:center;
-		align-items: center;
-		position: absolute;
-		top: 0;
-		right: 0;
-		z-index: 2;
-	}
-
-	&__day {
-		font-size: 36px;
-		font-weight: 700;
-	}
-
-	&__mounth {
-		font-size: 14px;
-		text-transform: uppercase;
-	}
-
-	&__img {
-		position: relative;
-		padding: 67% 0px 0px 0px;
-
-		img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			position: absolute;
-			inset: 0;
-		}
-	}
-
-	&__title {
-		flex: 1 1 auto;
-		padding: 14px 10px;
-		background-color: $color-white;
-		color: $color-black;
-		font-weight: 500;
-	}
-}
 .sports-schools {
 	padding: 70px 0px 30px;
 
@@ -363,78 +252,7 @@ body {
 	&__title {
 	}
 }
-.slider-partners {
-	padding: 56px 0;
 
-	&__body {
-		padding: 0 60px;
-		position: relative;
-		@media (max-width: 1600px) {
-			padding: 0 40px;
-		}
-	}
 
-	&__wrapper {
-
-		.swiper-slide {
-			height: auto;
-		}
-	}
-
-	&__arrow {
-		position: absolute;
-		top: 50%;
-		z-index: 2;
-		transition: all 0.3s ease 0s;
-		transform: translateY(-50%);
-
-		i {
-			font-size: 23px;
-			color: $color-gray-light;
-		}
-
-		&_prev {
-			left: 20px;
-		}
-
-		&_next {
-			right: 20px;
-		}
-
-		&:hover {
-			i {
-				color: $color-blue;
-			}
-		}
-
-		@media (max-width: 1600px) {
-			&_prev {
-				left: 10px;
-			}
-	
-			&_next {
-				right: 10px;
-			}
-		}
-	}
-}
-.slider-partners-item {
-	height: 100%;
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	text-align: center;
-
-	img {
-		filter: grayscale(100%);
-		transition: all 0.3s ease 0s;
-	}
-
-	&:hover {
-		img {
-			filter: grayscale(0%);
-		}
-	}
-}
 
 

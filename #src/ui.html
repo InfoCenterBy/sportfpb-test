@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<div class="my-5">
+					<div class='container'>
+
+						<!-- ACCORDION -->
+						<section class="mb-5">
+							<div class="row g-4">
+								<div class="col-12">
+									<div class="item-employee">
+										<div class="item-employee__photo">
+											<img src="./img/employees/gorbachev.jpg" alt="">
+										</div>
+										<div class="item-employee__body">
+											<h5 class="item-employee__position h5 mb-3">Заместитель директора</h5>
+											<h3 class="h3 mb-4">Горбачёв Василий Федорович</h3>
+											<div>
+												<div class="item-employee__row d-flex">
+													<i class="bi bi-telephone me-3 me-sm-4"></i>
+													<a href="tel:80173589422">8 017 358-94-22</a>
+												</div>
+												<div class="item-employee__row d-flex">
+													<i class="bi bi-clock me-3 me-sm-4"></i>
+													<div>Личный прием граждан, их представителей, представителей юридических лиц: первый четверг, третья среда месяца с 9.00 до 13.00</div>
+												</div>
+												<div class="item-employee__row d-flex">
+													<i class="bi bi-geo-alt me-3 me-sm-4"></i>
+													<div>г. Минск, пр-т Победителей, 21, каб. 1108</div>
+												</div>
+												<div class="item-employee__row d-flex">
+													<i class="bi bi-clipboard2-check me-3 me-sm-4"></i>
+													<div>запись на личный прием осуществляет секретарь – Сыманович Наталия Николаевна тел. <a href="tel:80173259759">8017 325-97-59</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="item-employee">
+										<div class="item-employee__body">
+											<h5 class="item-employee__position h5 mb-3">Директор</h5>
+											<h3 class="h3 mb-4">Морозова Марина Викторовна</h3>
+											<div>
+												<div class="item-employee__row d-flex">
+													<i class="bi bi-telephone me-3 me-sm-4"></i>
+													<a href="tel:80173589422">8 017 358-94-22</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="item-employee">
+										<div class="item-employee__body">
+											<h5 class="item-employee__position h5 mb-3">Заместитель Директора</h5>
+											<h3 class="h3 mb-4">Мелькова Людмила Валерьевна</h3>
+											<div>
+												<div class="item-employee__row d-flex">
+													<i class="bi bi-telephone me-3 me-sm-4"></i>
+													<a href="tel:80173842464">8 017 384-24-64</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						
+						<!-- ACCORDION -->
+						<section class="mb-5">
+							<div id="accordionFPB">
+								<div class="item-accordion">
+									<h4 class="h4" id="heading-1">
+										<button class="item-accordion__button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+											<span>борьба</span>
+											<i class="bi bi-chevron-up ms-3"></i>
+										</button>
+									</h4>
+									<div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionFPB">
+										<div class="item-accordion__body">
+											<p>Учащиеся Брестской ОЦ СДЮШОР профсоюзов по легкой атлетике занимают призовые места на республиканских и международных соревнованиях. За время существования школы в состав национальных команд по видам спорта были включены 150 человек.</p>
+										</div>
+									</div>
+								</div>
+								<div class="item-accordion">
+									<h4 class="h4" id="heading-2">
+										<button class="item-accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
+											<span>Волейбол</span>
+											<i class="bi bi-chevron-up ms-3"></i>
+										</button>
+									</h4>
+									<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionFPB">
+										<div class="item-accordion__body">
+											<p>Учащиеся Брестской ОЦ СДЮШОР профсоюзов по легкой атлетике занимают призовые места на республиканских и международных соревнованиях. За время существования школы в состав национальных команд по видам спорта были включены 150 человек.</p>
+										</div>
+									</div>
+								</div>
+								<div class="item-accordion">
+									<h4 class="h4" id="heading-3">
+										<button class="item-accordion__button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
+											<span>Футбол</span>
+											<i class="bi bi-chevron-up ms-3"></i>
+										</button>
+									</h4>
+									<div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionFPB">
+										<div class="item-accordion__body">
+											<p>Учащиеся Брестской ОЦ СДЮШОР профсоюзов по легкой атлетике занимают призовые места на республиканских и международных соревнованиях. За время существования школы в состав национальных команд по видам спорта были включены 150 человек.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+
+				</div>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_js.html',{})
+	</body>
+</html>

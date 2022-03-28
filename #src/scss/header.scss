@@ -73,7 +73,6 @@
 		align-items: center;
 		justify-content: space-around;
 	}
-
 	li {
 		padding: 16px 0;
 		position: relative;
@@ -86,7 +85,9 @@
 				top: 100%;
 			}
 
+			a.header-menu__link,
 			.header-menu__link {
+				color: $color-white;
 				opacity: 0.5;
 				i.bi-chevron-down {
 					transform: rotate(180deg);

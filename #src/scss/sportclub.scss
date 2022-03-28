@@ -1,0 +1,205 @@
+.item-sportclub-direction {
+	height: 100%;
+	padding: 40px 25px;
+	background-color: #fff;
+	border: 3px solid #fff;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	i {
+		opacity: 0;
+		overflow: hidden;
+		font-size: 28px;
+		color: $color-blue;
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		transition: all 0.3s ease 0s;
+	}
+
+	&:hover {
+		border-color: $color-blue;
+
+		i {
+			opacity: 1;
+			overflow: visible;
+			right: 15px;
+		}
+
+		.item-sportclub-direction__title {
+			color: $color-blue;
+		}
+	}
+
+	@media screen and (max-width: $md2+px) {
+		border-color: $color-blue;
+
+		i {
+			display: block;
+		}
+
+		.item-sportclub-direction__title {
+			color: $color-blue;
+		}
+	}
+
+   &__icon {
+		margin: 0px 45px 0px 0px;
+
+		@media (max-width: $md4+px) {
+			margin: 0px 20px 0px 0px;
+		}
+   }
+
+
+   &__title {
+		color: $color-black;
+		font-weight: 600;
+   }
+
+   &__info {
+		color: $color-gray;
+		font-size: 14px;
+		font-weight: 500;
+
+		div:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+
+   }
+}
+.sportschools-sportclub {
+}
+
+.item-sportschools-sportclub {
+	border: 2px solid $color-gray-light;
+	display: flex;
+	transition: border-color 0.3s ease 0s;
+
+	@media (max-width: $md3+px) {
+		display: block;
+	}
+
+	&:hover {
+		border-color: $color-blue;
+		.item-sportschools-sportclub__contacts {
+			border-color: $color-blue;
+		}
+
+		.item-sportschools-sportclub__info {
+			color: $color-black;
+		}
+	}
+
+	&:not(:last-child) {
+		margin: 0px 0px 24px 0px;
+	}
+
+	&__info {
+		flex: 0 1 65%;
+		padding: 24px;
+		font-size: 14px;
+		color: $color-gray;
+
+		@media (max-width: $md4+px) {
+			padding: 15px;
+		}
+	}
+
+	&__contacts {
+		flex: 0 1 35%;
+		padding: 24px;
+		border-left: 2px solid $color-gray-light;
+		transition: border-color 0.3s ease 0s;
+
+		@media (max-width: $md3+px) {
+			border-left: none;
+			border-top: 2px solid $color-gray-light;
+		}
+
+		@media (max-width: $md4+px) {
+			padding: 15px;
+		}
+	}
+
+	&__row {
+		font-weight: 500;
+		color: $color-black;
+
+		i {
+			position: relative;
+			transform: translateY(-3px);
+			font-size: 24px;
+		}
+
+		a {
+			font-weight: 500;
+			color: $color-black;
+
+			&:hover {
+				color: $color-blue;
+			}
+		}
+
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+}
+.icons-item-sportschools-sportclub {
+	margin: 30px 0px 0px 0px;
+	display: flex;
+	flex-wrap: wrap;
+
+	&__block {
+		width: 42px;
+		height: 42px;
+		border: 1px solid $color-gray-light;
+		display: flex;
+		justify-content:center;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin: 0px 15px 0px 0px;
+		}
+
+		img {
+			max-width: 30px;
+		}
+	}
+}
+.contacts-sportclub {
+	&__map {
+		iframe {
+			width: 100%;
+			height: 450px;
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+
+	&__title {
+		color: $color-gray;
+	}
+
+	&__text {
+		font-weight: 500;
+		color: $color-black;
+
+		a {
+			color: $color-black;
+
+			&:hover {
+				color: $color-blue;
+			}
+		}
+	}
+}
+
+
+
