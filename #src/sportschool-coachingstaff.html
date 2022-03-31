@@ -50,7 +50,7 @@
 								</div>
 							</aside>
 							<div class="col-lg-8 col-xl-9">
-								<section class="mb-5">
+								<section>
 									<h3 class="h3 mb-4">Тренерский состав</h3>
 									<div id="accordionFPB">
 										<div class="item-accordion">
@@ -62,7 +62,7 @@
 											</h4>
 											<div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#accordionFPB">
 												<div class="item-accordion__body">
-													<div class="coach-card" data-bs-toggle="modal" data-bs-target="#exampleModal">
+													<div class="coach-card" data-bs-toggle="modal" data-bs-target="#modal-coach-01">
 														<div class="coach-card__photo">
 															<img src="./img/coachs/01.jpg" alt="" class="img-fluid">
 														</div>
@@ -94,7 +94,26 @@
 											</h4>
 											<div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionFPB">
 												<div class="item-accordion__body">
-													222
+													<div class="coach-card" data-bs-toggle="modal" data-bs-target="#modal-coach-02">
+														<div class="coach-card__photo">
+															<img src="./img/coachs/01.jpg" alt="" class="img-fluid">
+														</div>
+														<div class="coach-card__info">
+															<i class="bi bi-arrow-right"></i>
+															<div class="coach-card__position">Старший тренер по волейболу</div>
+															<h5 class="h3 mb-4">Дудич Иван Игоревич</h5>
+															<div>
+																<div class="coach-card__item">
+																	<div class="coach-card__title">Тренер</div>
+																	<div>Группа 2009-2011 г.р.</div>
+																</div>
+																<div class="coach-card__item">
+																	<div class="coach-card__title">Образование</div>
+																	<div>Белорусский государственный университет физической культуры</div>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -107,14 +126,32 @@
 											</h4>
 											<div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionFPB">
 												<div class="item-accordion__body">
-													333
+													<div class="coach-card" data-bs-toggle="modal" data-bs-target="#modal-coach-01">
+														<div class="coach-card__photo">
+															<img src="./img/coachs/01.jpg" alt="" class="img-fluid">
+														</div>
+														<div class="coach-card__info">
+															<i class="bi bi-arrow-right"></i>
+															<div class="coach-card__position">Старший тренер по футболу</div>
+															<h5 class="h3 mb-4">Морозова Марина Викторовна</h5>
+															<div>
+																<div class="coach-card__item">
+																	<div class="coach-card__title">Тренер</div>
+																	<div>Группа 2010-2013 г.р.</div>
+																</div>
+																<div class="coach-card__item">
+																	<div class="coach-card__title">Образование</div>
+																	<div>Белорусский государственный университет физической культуры</div>
+																</div>
+															</div>
+														</div>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</section>
-								
-								<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal fade" id="modal-coach-01" tabindex="-1" aria-labelledby="modal-coach" aria-hidden="true">
 									<div class="modal-dialog modal-coach modal-dialog-centered">
 										<div class="modal-content modal-coach__content">
 											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -139,19 +176,92 @@
 													</div>
 													<div class="modal-coach__item">
 														<div class="modal-coach__title">Достижения</div>
-														<div>2009 г. - Серебряный призёр чемпионата Европы среди кадетов 2009 года в Зренянине в весовой категории до 63 кг.</div>
-														<div>2012 г. - Серебряный призёр чемпионата Европы среди юниоров 2012 года в Загребе.</div>
-														<div>2013 г. - Бронзовый призёр летней Универсиады 2013 года в Казани.</div>
-														<div>2014 г. - На чемпионате мира 2014 года заняла 7-е место,  стала серебряным призёром чемпионата Европы и бронзовым призёром Международного турнира «Циолковский».</div>
-														<div>2015 г. - На чемпионате мира заняла лишь 10-е место. Бронзовый призёр Европейских игр 2015 года в Баку в весовой категории до 63 кг. В том же году стала чемпионкой Европы среди молодёжи. На Гран-при Германии завоевала также бронзовую медаль, а на Poland Open — золотую.</div>
-														<div>2016 г. - На чемпионате Европы 2016 года в Риге завоевала золотую медаль в весовой категории до 69 кг.</div>
+														<p>2009 г. - Серебряный призёр чемпионата Европы среди кадетов 2009 года в Зренянине в весовой категории до 63 кг.</p>
+														<p>2012 г. - Серебряный призёр чемпионата Европы среди юниоров 2012 года в Загребе.</p>
+														<p>2013 г. - Бронзовый призёр летней Универсиады 2013 года в Казани.</p>
+														<p>2014 г. - На чемпионате мира 2014 года заняла 7-е место,  стала серебряным призёром чемпионата Европы и бронзовым призёром Международного турнира «Циолковский».</p>
+														<p>2015 г. - На чемпионате мира заняла лишь 10-е место. Бронзовый призёр Европейских игр 2015 года в Баку в весовой категории до 63 кг. В том же году стала чемпионкой Европы среди молодёжи. На Гран-при Германии завоевала также бронзовую медаль, а на Poland Open — золотую.</p>
+														<p>2016 г. - На чемпионате Европы 2016 года в Риге завоевала золотую медаль в весовой категории до 69 кг.</p>
 													</div>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								
+								<div class="modal fade" id="modal-coach-02" tabindex="-1" aria-labelledby="modal-coach" aria-hidden="true">
+									<div class="modal-dialog modal-coach modal-dialog-centered">
+										<div class="modal-content modal-coach__content">
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											<div class="modal-coach__photo">
+												<img src="./img/coachs/01.jpg" alt="" class="img-fluid">
+											</div>
+											<div class="modal-coach__info">
+												<div class="modal-coach__position">Старший тренер по волейболу</div>
+												<h5 class="h3 mb-4">Дудич Иван Игоревич</h5>
+												<div>
+													<div class="modal-coach__item">
+														<div class="modal-coach__title">Тренер</div>
+														<div>Группа 2009-2011 г.р.</div>
+													</div>
+													<div class="modal-coach__item">
+														<div class="modal-coach__title">Образование</div>
+														<div>Белорусский государственный университет физической культуры</div>
+													</div>
+													<div class="modal-coach__item">
+														<div class="modal-coach__title">Тренерский стаж</div>
+														<div>Белорусский государственный университет физической культуры</div>
+													</div>
+													<div class="modal-coach__item">
+														<div class="modal-coach__title">Достижения</div>
+														<p>2009 г. - Серебряный призёр чемпионата Европы среди кадетов 2009 года в Зренянине в весовой категории до 63 кг.</p>
+														<p>2012 г. - Серебряный призёр чемпионата Европы среди юниоров 2012 года в Загребе.</p>
+														<p>2013 г. - Бронзовый призёр летней Универсиады 2013 года в Казани.</p>
+														<p>2014 г. - На чемпионате мира 2014 года заняла 7-е место,  стала серебряным призёром чемпионата Европы и бронзовым призёром Международного турнира «Циолковский».</p>
+														<p>2015 г. - На чемпионате мира заняла лишь 10-е место. Бронзовый призёр Европейских игр 2015 года в Баку в весовой категории до 63 кг. В том же году стала чемпионкой Европы среди молодёжи. На Гран-при Германии завоевала также бронзовую медаль, а на Poland Open — золотую.</p>
+														<p>2016 г. - На чемпионате Европы 2016 года в Риге завоевала золотую медаль в весовой категории до 69 кг.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="modal fade" id="modal-coach-03" tabindex="-1" aria-labelledby="modal-coach" aria-hidden="true">
+									<div class="modal-dialog modal-coach modal-dialog-centered">
+										<div class="modal-content modal-coach__content">
+											<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											<div class="modal-coach__photo">
+												<img src="./img/coachs/01.jpg" alt="" class="img-fluid">
+											</div>
+											<div class="modal-coach__info">
+												<div class="modal-coach__position">Старший тренер по вольной борьбе</div>
+												<h5 class="h3 mb-4">Морозова Марина Викторовна</h5>
+												<div>
+													<div class="modal-coach__item">
+														<div class="modal-coach__title">Тренер</div>
+														<div>Группа 2009-2011 г.р.</div>
+													</div>
+													<div class="modal-coach__item">
+														<div class="modal-coach__title">Образование</div>
+														<div>Белорусский государственный университет физической культуры</div>
+													</div>
+													<div class="modal-coach__item">
+														<div class="modal-coach__title">Тренерский стаж</div>
+														<div>Белорусский государственный университет физической культуры</div>
+													</div>
+													<div class="modal-coach__item">
+														<div class="modal-coach__title">Достижения</div>
+														<p>2009 г. - Серебряный призёр чемпионата Европы среди кадетов 2009 года в Зренянине в весовой категории до 63 кг.</p>
+														<p>2012 г. - Серебряный призёр чемпионата Европы среди юниоров 2012 года в Загребе.</p>
+														<p>2013 г. - Бронзовый призёр летней Универсиады 2013 года в Казани.</p>
+														<p>2014 г. - На чемпионате мира 2014 года заняла 7-е место,  стала серебряным призёром чемпионата Европы и бронзовым призёром Международного турнира «Циолковский».</p>
+														<p>2015 г. - На чемпионате мира заняла лишь 10-е место. Бронзовый призёр Европейских игр 2015 года в Баку в весовой категории до 63 кг. В том же году стала чемпионкой Европы среди молодёжи. На Гран-при Германии завоевала также бронзовую медаль, а на Poland Open — золотую.</p>
+														<p>2016 г. - На чемпионате Европы 2016 года в Риге завоевала золотую медаль в весовой категории до 69 кг.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>

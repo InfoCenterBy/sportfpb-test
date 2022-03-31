@@ -104,6 +104,7 @@ body {
 	}
 }
 .item-sports-clubs {
+	height: 100%;
 	padding: 24px;
 	min-height: 250px;
 	color: $color-white;
@@ -115,30 +116,37 @@ body {
 	position: relative;
 	transition: all 0.3s ease 0s;
 
+	@media (max-width: $md3+px) {
+		min-height: 200px;
+	}
+
 	i {
 		font-size: 28px;
 		color: $color-white;
 		position: absolute;
-		top: 20px;
-		right: 30px;
+		top: 16px;
+		right: 24px;
 		transition: all 0.3s ease 0s;
 	}
 
 	&:hover {
-		background-color: $color-blue-dark;
 		color: $color-white;
 
-		.item-sports-clubs__title {
-			margin: 0px 0px 30px 0px;
-			text-align: left;
-		}
+		@media (hover: hover) {
+			background-color: $color-blue-dark;
 
-		.item-sports-clubs__info {
-			display: block;
-		}
-		
-		i {
-			transform: translateX(5px);
+			.item-sports-clubs__title {
+				margin: 16px 0px 30px 0px;
+				text-align: left;
+			}
+
+			.item-sports-clubs__info {
+				display: block;
+			}
+
+			i {
+				transform: translateX(5px);
+			}
 		}
 	}
 
@@ -151,8 +159,10 @@ body {
 		}
 
 		&:hover {
-			background-color: $color-white;
-			color: $color-blue-dark;
+			@media (hover: hover) {
+				background-color: $color-white;
+				color: $color-blue-dark;
+			}
 		}
 	}
 
@@ -214,7 +224,7 @@ body {
 		}
 
 		input {
-			
+
 			width: 300px;
 			padding: 7px 15px 7px 45px;
 			border: 1px solid $color-gray;
@@ -252,7 +262,3 @@ body {
 	&__title {
 	}
 }
-
-
-
-

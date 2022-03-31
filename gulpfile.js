@@ -161,7 +161,7 @@ gulp.task('svgSprite', function () {
 })
 
 gulp.task('deploy', function () {
-	return gulp.src("./mns-test/**/*")
+	return gulp.src("./sportfpb-test/**/*")
 	  .pipe(deploy())
  });
 

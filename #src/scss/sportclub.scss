@@ -1,6 +1,6 @@
 .item-sportclub-direction {
 	height: 100%;
-	padding: 40px 25px;
+	padding: 40px 24px;
 	background-color: #fff;
 	border: 3px solid #fff;
 	position: relative;
@@ -13,8 +13,8 @@
 		font-size: 28px;
 		color: $color-blue;
 		position: absolute;
-		top: 15px;
-		right: 20px;
+		top: 5px;
+		right: 30px;
 		transition: all 0.3s ease 0s;
 	}
 
@@ -24,7 +24,7 @@
 		i {
 			opacity: 1;
 			overflow: visible;
-			right: 15px;
+			right: 24px;
 		}
 
 		.item-sportclub-direction__title {
@@ -36,7 +36,9 @@
 		border-color: $color-blue;
 
 		i {
-			display: block;
+			opacity: 1;
+			overflow: visible;
+			right: 24px;
 		}
 
 		.item-sportclub-direction__title {
@@ -44,18 +46,28 @@
 		}
 	}
 
+	@media (max-width: $md4+px) {
+		padding: 40px 16px;
+
+		i {
+			right: 16px;
+		}
+	}
+
    &__icon {
 		margin: 0px 45px 0px 0px;
 
 		@media (max-width: $md4+px) {
-			margin: 0px 20px 0px 0px;
+			margin: 0px 16px 0px 0px;
 		}
    }
 
 
    &__title {
+		margin: 0px 0px 24px 0px;
+		font-size: 18px;
 		color: $color-black;
-		font-weight: 600;
+		font-weight: 500;
    }
 
    &__info {
@@ -71,7 +83,6 @@
 }
 .sportschools-sportclub {
 }
-
 .item-sportschools-sportclub {
 	border: 2px solid $color-gray-light;
 	display: flex;
@@ -148,7 +159,7 @@
 	}
 }
 .icons-item-sportschools-sportclub {
-	margin: 30px 0px 0px 0px;
+	margin: 24px 0px 0px 0px;
 	display: flex;
 	flex-wrap: wrap;
 
