@@ -1130,7 +1130,6 @@ Object.defineProperty(exports, '__esModule', { value: true });
 //# sourceMappingURL=sticky-sidebar.js.map
 ; 
 
-
 // ====================   scroll accordion to top   ==========================
 $('#accordionFPB').on('shown.bs.collapse', function (event) {
    $('html, body').animate(
@@ -1197,6 +1196,6 @@ var $calendar;
       ],
 
     });
-	 
+
     $calendar = container.data('plugin_simpleCalendar')
   });;

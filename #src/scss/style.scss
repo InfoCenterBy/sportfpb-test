@@ -8,6 +8,7 @@
 //<Подключаем шрифты>=======================================================================================
 //&display=swap&subset=cyrillic-ext
 @import "fonts";
+@import "iconsfont";
 //</Подключаем шрифты>=======================================================================================
 
 //<Иконочные шрифты>==========================================================================================
@@ -79,17 +80,11 @@ body {
 @import "header";
 @import "footer";
 @import "slider";
-@import "about";
-@import "sports-mass-work";
 @import "sportclub";
-//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
-//<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
 	flex: 1 1 auto;
 }
-//===================================================================================================================================
-
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 .sports-clubs {
 	padding: 24px 0 48px;
@@ -187,14 +182,6 @@ body {
 .sports-schools {
 	padding: 70px 0px 30px;
 
-	&__body {
-		margin: 0px 0px 40px 0px;
-		display: flex;
-		justify-content: center;
-		gap: 10px;
-		flex-wrap: wrap;
-	}
-
 	&__top {
 		margin: 0px 0px 30px 0px;
 		display: flex;
@@ -241,6 +228,13 @@ body {
 		text-align: right;
 	}
 }
+.sports-schools-wrapper {
+	margin: 0px 0px 40px 0px;
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	flex-wrap: wrap;
+}
 .sports-schools-item {
 	width: 140px;
 	padding: 10px;
@@ -255,10 +249,7 @@ body {
 	}
 
 	&__icon {
-		margin: 0px 0px 25px 0px;
 		text-align: center;
-	}
-
-	&__title {
+		font-size: 84px;
 	}
 }

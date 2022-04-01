@@ -15,6 +15,11 @@
 		margin: 0;
 		padding: 0;
 		&:hover {
+			.header-contacts-menu__link {
+				color: $color-white;
+				opacity: 0.5;
+			}
+			
 			.header-contacts-submenu {
 				visibility: visible;
 				opacity: 1;
@@ -29,7 +34,7 @@
 		color: $color-white;
 		display: flex;
 		align-items: center;
-		
+
 		i {
 			font-size: 22px;
 		}
@@ -95,14 +100,14 @@
 			}
 		}
 
-		&:first-child {	
+		&:first-child {
 			& > .header-submenu {
 				right: auto;
 				left: 0;
 			}
 		}
 	}
-	
+
 	&__link {
 		display: flex;
 		align-items: center;
@@ -132,7 +137,7 @@
 	position: absolute;
 	right: 0;
 	top: 150%;
-	z-index: 2;
+	z-index: 50;
 	transition: all 0.3s ease 0s;
 
 	li {

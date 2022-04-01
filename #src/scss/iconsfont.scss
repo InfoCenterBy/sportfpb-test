@@ -1,0 +1,192 @@
+@font-face {
+  font-family: 'icons';
+  src:  url('../fonts/icons.eot?xrlneo');
+  src:  url('../fonts/icons.eot?xrlneo#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?xrlneo') format('truetype'),
+    url('../fonts/icons.woff?xrlneo') format('woff'),
+    url('../fonts/icons.svg?xrlneo#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-acrobatics:before {
+  content: "\e900";
+}
+.icon-aerobics:before {
+  content: "\e901";
+}
+.icon-archery:before {
+  content: "\e902";
+}
+.icon-arm-wrestling:before {
+  content: "\e903";
+}
+.icon-athletics:before {
+  content: "\e904";
+}
+.icon-badminton:before {
+  content: "\e905";
+}
+.icon-baseball:before {
+  content: "\e906";
+}
+.icon-basketball:before {
+  content: "\e907";
+}
+.icon-biathlon:before {
+  content: "\e908";
+}
+.icon-billiard:before {
+  content: "\e909";
+}
+.icon-body-building:before {
+  content: "\e90a";
+}
+.icon-boxing:before {
+  content: "\e90b";
+}
+.icon-bullet-shooting:before {
+  content: "\e90c";
+}
+.icon-chess:before {
+  content: "\e90d";
+}
+.icon-city-sports:before {
+  content: "\e90e";
+}
+.icon-cycling:before {
+  content: "\e90f";
+}
+.icon-diving:before {
+  content: "\e910";
+}
+.icon-fencing:before {
+  content: "\e911";
+}
+.icon-field-hockey:before {
+  content: "\e912";
+}
+.icon-fire-rescue-sport:before {
+  content: "\e913";
+}
+.icon-football:before {
+  content: "\e914";
+}
+.icon-freestyle-wrestling:before {
+  content: "\e915";
+}
+.icon-greco-roman-wrestling:before {
+  content: "\e916";
+}
+.icon-handball:before {
+  content: "\e917";
+}
+.icon-horseback-riding:before {
+  content: "\e918";
+}
+.icon-judo:before {
+  content: "\e919";
+}
+.icon-karate:before {
+  content: "\e91a";
+}
+.icon-kayaking:before {
+  content: "\e91b";
+}
+.icon-kickboxing:before {
+  content: "\e91c";
+}
+.icon-mountain-skiing:before {
+  content: "\e91d";
+}
+.icon-nordic-combined:before {
+  content: "\e91e";
+}
+.icon-orienteering:before {
+  content: "\e91f";
+}
+.icon-powerlifting:before {
+  content: "\e920";
+}
+.icon-rhythmic-gymnastics:before {
+  content: "\e921";
+}
+.icon-rock-climbing:before {
+  content: "\e922";
+}
+.icon-rowing:before {
+  content: "\e923";
+}
+.icon-rowing-slalom:before {
+  content: "\e924";
+}
+.icon-sailing:before {
+  content: "\e925";
+}
+.icon-sambo:before {
+  content: "\e926";
+}
+.icon-short-track:before {
+  content: "\e927";
+}
+.icon-skating:before {
+  content: "\e928";
+}
+.icon-ski-jumping:before {
+  content: "\e929";
+}
+.icon-ski-race:before {
+  content: "\e92a";
+}
+.icon-sports-gymnastics:before {
+  content: "\e92b";
+}
+.icon-swimming:before {
+  content: "\e92c";
+}
+.icon-synchronized-swimming:before {
+  content: "\e92d";
+}
+.icon-table-tennis:before {
+  content: "\e92e";
+}
+.icon-taekwondo:before {
+  content: "\e92f";
+}
+.icon-tennis:before {
+  content: "\e930";
+}
+.icon-thai-boxing:before {
+  content: "\e931";
+}
+.icon-triathlon:before {
+  content: "\e932";
+}
+.icon-volleyball:before {
+  content: "\e933";
+}
+.icon-weightlifting:before {
+  content: "\e934";
+}
+.icon-weight-lifting:before {
+  content: "\e935";
+}
+.icon-wushu:before {
+  content: "\e936";
+}

@@ -1,5 +1,4 @@
 
-
 // ====================   scroll accordion to top   ==========================
 $('#accordionFPB').on('shown.bs.collapse', function (event) {
    $('html, body').animate(
@@ -66,6 +65,6 @@ var $calendar;
       ],
 
     });
-	 
+
     $calendar = container.data('plugin_simpleCalendar')
   });
