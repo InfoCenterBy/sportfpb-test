@@ -1,3 +1,29 @@
+const body = document.querySelector('body'),
+		btnBurger = document.querySelector('.btn-burger-menu'),
+		menuNav = document.querySelector('.header-menu'),
+		menuLinks = document.querySelectorAll('.header-menu__link_btn');
+
+btnBurger.addEventListener('click', function (e) {
+	console.log('ffff');
+	btnBurger.classList.toggle('active');
+	menuNav.classList.toggle('active');
+	body.classList.toggle('lock');
+});
+
+document.addEventListener('click', function (e) {
+   if (!e.target.closest('.btn-burger-menu, .header-menu')) {
+		btnBurger.classList.remove('active');
+		menuNav.classList.remove('active');
+      body.classList.remove('lock');
+   }
+});
+menuLinks.forEach(link => {
+	link.addEventListener('click', function (e) {
+		console.log('ffff');
+		link.classList.toggle('active');
+	});
+});
+
 
 // ====================   scroll accordion to top   ==========================
 $('#accordionFPB').on('shown.bs.collapse', function (event) {

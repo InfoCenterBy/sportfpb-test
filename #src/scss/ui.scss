@@ -47,6 +47,48 @@
       color: $color-white;
       text-transform: uppercase;
    }
+
+	img {
+		max-width: 90px;
+	}
+
+	@media (max-width: $md2+px) {
+		&__name {
+			max-width: 360px;
+			margin: 0px 0px 0px 24px;
+			font-size: 16px;
+		}
+
+		img {
+			max-width: 65px;
+		}
+	}
+
+	@media (max-width: $md3+px) {
+		&__name {
+			max-width: 280px;
+			margin: 0px 0px 0px 14px;
+			font-size: 12px;
+		}
+
+		img {
+			max-width: 45px;
+		}
+	}
+
+	&_header {
+		@media (max-width: 480px) {
+			.logo__name {
+				max-width: 160px;
+				margin: 0px 0px 0px 10px;
+				font-size: 7px;
+			}
+
+			img {
+				max-width: 35px;
+			}
+		}
+	}
 }
 .main-title {
 	@include adaptiv-value("font-size", 32, 24, 1);
@@ -213,6 +255,30 @@
 		background-color: $color-white;
 		color: $color-black;
 		font-weight: 500;
+	}
+}
+.item-contacts {
+
+	&__title {
+		margin: 0px 0px 8px 0px;
+		color: $color-gray;
+	}
+
+	&__text {
+		font-weight: 500;
+		color: $color-black;
+
+		&:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+
+		a {
+			color: $color-black;
+
+			&:hover {
+				color: $color-blue;
+			}
+		}
 	}
 }
 .item-employee {

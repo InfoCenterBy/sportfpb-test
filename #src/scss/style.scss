@@ -27,9 +27,9 @@ $minWidth: 320px;
 $maxWidth: 1920;
 $maxWidthContainer: 1680;
 $md1: 1100;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$md2: 992;
+$md3: 768;
+$md4: 576;
 
 $mainColor: #151516;
 
@@ -41,7 +41,7 @@ $mainColor: #151516;
 body {
 	background-color: #FCFCFC;
 	color: $mainColor;
-	&._lock {
+	&.lock {
 		overflow: hidden;
 	}
 }
@@ -251,5 +251,21 @@ body {
 	&__icon {
 		text-align: center;
 		font-size: 84px;
+	}
+}
+.contacts-map {
+	height: 580px;
+
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+
+	@media (max-width: $md2+px) {
+		height: 450px;
+	}
+
+	@media (max-width: $md4+px) {
+		height: 380px;
 	}
 }
