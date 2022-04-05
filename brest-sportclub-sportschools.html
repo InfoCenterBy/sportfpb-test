@@ -38,36 +38,42 @@
 	<div class="container">
 		<div class="header-top">
 			<div class="header-top__body">
-				<a href="index.html" class="logo">
+				<a href="index.html" class="logo logo_header">
 					<img src="./img/logo.png" alt="Логотип">
 					<div class="logo__name">УЧРЕЖДЕНИЕ «СПОРТИВНЫЙ КЛУБ ФЕДЕРАЦИИ ПРОФСОЮЗОВ БЕЛАРУСИ»</div>
 				</a>
-				<nav class="header-contacts-menu">
-					<ul class="header-contacts-menu__list">
-						<li>
-							<a href="tel:+375173259759" class="header-contacts-menu__link"><i class="bi bi-telephone me-3"></i><span>+375 17 325-97-59</span></a>
-							<ul class="header-contacts-submenu">
-								<li>
-									<a href="tel:+375173748862" class="header-contacts-submenu__link">+375 17 374-88-62</a>
-								</li>
-								<li>
-									<div class="header-contacts-submenu__title">E-mail</div>
-									<a href="mailto:sportfpb@mail.ru" class="header-contacts-submenu__link">sportfpb@mail.ru</a>
-								</li>
-								<li>
-									<div class="header-contacts-submenu__title">Адрес</div>
-									<div>г. Минск, пр-т Победителей, 21</div>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
+				<div class="header-top__menu">
+					<nav data-da=".header-menu,992,2" class="header-contacts-menu">
+						<ul class="header-contacts-menu__list">
+							<li>
+								<div class="header-contacts-menu__title">Телефон</div>
+								<a href="tel:+375173259759" class="header-contacts-menu__link"><i class="bi bi-telephone me-3"></i><span>+375 17 325-97-59</span></a>
+								<ul class="header-contacts-submenu">
+									<li>
+										<a href="tel:+375173748862" class="header-contacts-submenu__link">+375 17 374-88-62</a>
+									</li>
+									<li>
+										<div class="header-contacts-submenu__title">E-mail</div>
+										<a href="mailto:sportfpb@mail.ru" class="header-contacts-submenu__link">sportfpb@mail.ru</a>
+									</li>
+									<li>
+										<div class="header-contacts-submenu__title">Адрес</div>
+										<div>г. Минск, пр-т Победителей, 21</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div class="btn-burger-menu">
+						<span></span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<nav class="header-menu">
 			<ul class="header-menu__list">
 				<li>
-					<div class="header-menu__link">О нас<i class="bi bi-chevron-down ms-2"></i></div>
+					<div class="header-menu__link header-menu__link_btn">О нас<i class="bi bi-chevron-down ms-2"></i></div>
 					<ul class="header-submenu">
 						<li>
 							<a href="about.html" class="header-submenu__link">О клубе</a>
@@ -81,7 +87,7 @@
 					</ul>
 				</li>
 				<li>
-					<div class="header-menu__link">Спортивно-массовая работа<i class="bi bi-chevron-down ms-2"></i></div>
+					<div class="header-menu__link header-menu__link_btn">Спортивно-массовая работа<i class="bi bi-chevron-down ms-2"></i></div>
 					<ul class="header-submenu">
 						<li>
 							<a href="smw-calendar-fosm.html" class="header-submenu__link">Календарь ФОСМ мероприятий</a>
@@ -98,7 +104,7 @@
 					</ul>
 				</li>
 				<li>
-					<div class="header-menu__link">Спорт высших достижений<i class="bi bi-chevron-down ms-2"></i></div>
+					<div class="header-menu__link header-menu__link_btn">Спорт высших достижений<i class="bi bi-chevron-down ms-2"></i></div>
 					<ul class="header-submenu">
 						<li>
 							<a href="sha-achievements.html" class="header-submenu__link">Достижения профсоюзных спортсменов</a>
@@ -118,13 +124,14 @@
 					<a href="services.html" class="header-menu__link">Услуги</a>
 				</li>
 				<li>
-					<a href="#" class="header-menu__link">Контакты</a>
+					<a href="contacts.html" class="header-menu__link">Контакты</a>
 				</li>
 				<li>
-					<div class="header-menu__link"><i class="bi bi-search"></i></div>
+					<div data-da=".header-top__menu,992,0" class="header-menu__link header-menu__link_btn-search"><i class="bi bi-search"></i></div>
 				</li>
 			</ul>
 		</nav>
+		<div class="header__overlay"></div>
 	</div>
 </header>
 			<main class="page">
@@ -169,106 +176,91 @@
 								</div>
 							</aside>
 							<div class="col-lg-8 col-xl-9">
-								<section class="sportschools-sportclub">
-									<div class="item-sportschools-sportclub">
-										<div class="item-sportschools-sportclub__info">
+								<section>
+									<div class="card-sportschool">
+										<div class="card-sportschool__info">
 											<div class="mb-3">
-												<a href="sportschool.html" class="link-decor">Брестская ОЦ СДЮШОР профсоюзов по легкой атлетике</a>
+												<h5><a href="sportschool.html" class="link-decor">Брестская ОЦ СДЮШОР профсоюзов по легкой атлетике</a></h5>
 											</div>
 											<p>Спортивная школа работает с сентября 1973 года. В спортивной школе проводятся занятия по легкой атлетике  для детей и подростков с 5 лет.</p>
-											<div class="icons-item-sportschools-sportclub">
-												<div class="icons-item-sportschools-sportclub__block">
-													<img src="./img/icon-sports-school/01.svg" alt="">
-												</div>
-												<div class="icons-item-sportschools-sportclub__block">
-													<img src="./img/icon-sports-school/02.svg" alt="">
-												</div>
+											<div class="card-sportschool__icons">
+												<div class="item-icon-sportschool icon-chess"></div>
+												<div class="item-icon-sportschool icon-basketball"></div>
+												<div class="item-icon-sportschool icon-cycling"></div>
 											</div>
 										</div>
-										<div class="item-sportschools-sportclub__contacts">
-											<div class="item-sportschools-sportclub__row d-flex">
+										<div class="card-sportschool__contacts">
+											<div class="card-sportschool__row d-flex">
 												<i class="bi bi-geo-alt me-3 me-sm-4"></i>
 												<div>г. Брест, ул. 2-ая Заводская, 5</div>
 											</div>
-											<div class="item-sportschools-sportclub__row d-flex">
+											<div class="card-sportschool__row d-flex">
 												<i class="bi bi-telephone me-3 me-sm-4"></i>
 												<a href="tel:80173589422">8 017 358-94-22</a>
 											</div>
 										</div>
 									</div>
-									<div class="item-sportschools-sportclub">
-										<div class="item-sportschools-sportclub__info">
+									<div class="card-sportschool">
+										<div class="card-sportschool__info">
 											<div class="mb-3">
-												<a href="#" class="link-decor">Брестская СДЮШОР профсоюзов</a>
+												<h5><a href="sportschool.html" class="link-decor">Брестская СДЮШОР профсоюзов</a></h5>
 											</div>
 											<p>Спортивная школа работает с сентября 1973 года. В спортивной школе проводятся занятия по легкой атлетике  для детей и подростков с 5 лет.</p>
-											<div class="icons-item-sportschools-sportclub">
-												<div class="icons-item-sportschools-sportclub__block">
-													<img src="./img/icon-sports-school/01.svg" alt="">
-												</div>
-												<div class="icons-item-sportschools-sportclub__block">
-													<img src="./img/icon-sports-school/02.svg" alt="">
-												</div>
+											<div class="card-sportschool__icons">
+												<div class="item-icon-sportschool icon-basketball"></div>
 											</div>
 										</div>
-										<div class="item-sportschools-sportclub__contacts">
-											<div class="item-sportschools-sportclub__row d-flex">
+										<div class="card-sportschool__contacts">
+											<div class="card-sportschool__row d-flex">
 												<i class="bi bi-geo-alt me-3 me-sm-4"></i>
 												<div>г. Брест, ул. 2-ая Заводская, 5</div>
 											</div>
-											<div class="item-sportschools-sportclub__row d-flex">
+											<div class="card-sportschool__row d-flex">
 												<i class="bi bi-telephone me-3 me-sm-4"></i>
 												<a href="tel:80173589422">8 017 358-94-22</a>
 											</div>
 										</div>
 									</div>
-									<div class="item-sportschools-sportclub">
-										<div class="item-sportschools-sportclub__info">
+									<div class="card-sportschool">
+										<div class="card-sportschool__info">
 											<div class="mb-3">
-												<a href="#" class="link-decor">Брестская СДЮШОР профсоюзов по акробатике и бадминтону</a>
+												<h5><a href="sportschool.html" class="link-decor">Брестская СДЮШОР профсоюзов по акробатике и бадминтону</a></h5>
 											</div>
 											<p>Спортивная школа работает с сентября 1973 года. В спортивной школе проводятся занятия по легкой атлетике  для детей и подростков с 5 лет.</p>
-											<div class="icons-item-sportschools-sportclub">
-												<div class="icons-item-sportschools-sportclub__block">
-													<img src="./img/icon-sports-school/01.svg" alt="">
-												</div>
-												<div class="icons-item-sportschools-sportclub__block">
-													<img src="./img/icon-sports-school/02.svg" alt="">
-												</div>
+											<div class="card-sportschool__icons">
+												<div class="item-icon-sportschool icon-chess"></div>
+												<div class="item-icon-sportschool icon-basketball"></div>
+												<div class="item-icon-sportschool icon-cycling"></div>
 											</div>
 										</div>
-										<div class="item-sportschools-sportclub__contacts">
-											<div class="item-sportschools-sportclub__row d-flex">
+										<div class="card-sportschool__contacts">
+											<div class="card-sportschool__row d-flex">
 												<i class="bi bi-geo-alt me-3 me-sm-4"></i>
 												<div>г. Брест, ул. 2-ая Заводская, 5</div>
 											</div>
-											<div class="item-sportschools-sportclub__row d-flex">
+											<div class="card-sportschool__row d-flex">
 												<i class="bi bi-telephone me-3 me-sm-4"></i>
 												<a href="tel:80173589422">8 017 358-94-22</a>
 											</div>
 										</div>
 									</div>
-									<div class="item-sportschools-sportclub">
-										<div class="item-sportschools-sportclub__info">
+									<div class="card-sportschool">
+										<div class="card-sportschool__info">
 											<div class="mb-3">
-												<a href="#" class="link-decor">Брестская ОЦ СДЮШОР профсоюзов по легкой атлетике</a>
+												<h5><a href="sportschool.html" class="link-decor">Брестская СДЮШОР профсоюзов по акробатике и бадминтону</a></h5>
 											</div>
 											<p>Спортивная школа работает с сентября 1973 года. В спортивной школе проводятся занятия по легкой атлетике  для детей и подростков с 5 лет.</p>
-											<div class="icons-item-sportschools-sportclub">
-												<div class="icons-item-sportschools-sportclub__block">
-													<img src="./img/icon-sports-school/01.svg" alt="">
-												</div>
-												<div class="icons-item-sportschools-sportclub__block">
-													<img src="./img/icon-sports-school/02.svg" alt="">
-												</div>
+											<div class="card-sportschool__icons">
+												<div class="item-icon-sportschool icon-basketball"></div>
+												<div class="item-icon-sportschool icon-cycling"></div>
 											</div>
 										</div>
-										<div class="item-sportschools-sportclub__contacts">
-											<div class="item-sportschools-sportclub__row d-flex">
+										<div class="card-sportschool__contacts">
+											<div class="card-sportschool__row d-flex">
 												<i class="bi bi-geo-alt me-3 me-sm-4"></i>
 												<div>г. Брест, ул. 2-ая Заводская, 5</div>
 											</div>
-											<div class="item-sportschools-sportclub__row d-flex">
+											<div class="card-sportschool__row d-flex">
 												<i class="bi bi-telephone me-3 me-sm-4"></i>
 												<a href="tel:80173589422">8 017 358-94-22</a>
 											</div>

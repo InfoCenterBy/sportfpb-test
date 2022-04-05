@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-   <title>Спортивные школы»</title>
+   <title>Спортивные школы</title>
    <meta charset="UTF-8" />
    <meta name="format-detection" content="telephone=no" />
    <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,36 +38,42 @@
 	<div class="container">
 		<div class="header-top">
 			<div class="header-top__body">
-				<a href="index.html" class="logo">
+				<a href="index.html" class="logo logo_header">
 					<img src="./img/logo.png" alt="Логотип">
 					<div class="logo__name">УЧРЕЖДЕНИЕ «СПОРТИВНЫЙ КЛУБ ФЕДЕРАЦИИ ПРОФСОЮЗОВ БЕЛАРУСИ»</div>
 				</a>
-				<nav class="header-contacts-menu">
-					<ul class="header-contacts-menu__list">
-						<li>
-							<a href="tel:+375173259759" class="header-contacts-menu__link"><i class="bi bi-telephone me-3"></i><span>+375 17 325-97-59</span></a>
-							<ul class="header-contacts-submenu">
-								<li>
-									<a href="tel:+375173748862" class="header-contacts-submenu__link">+375 17 374-88-62</a>
-								</li>
-								<li>
-									<div class="header-contacts-submenu__title">E-mail</div>
-									<a href="mailto:sportfpb@mail.ru" class="header-contacts-submenu__link">sportfpb@mail.ru</a>
-								</li>
-								<li>
-									<div class="header-contacts-submenu__title">Адрес</div>
-									<div>г. Минск, пр-т Победителей, 21</div>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
+				<div class="header-top__menu">
+					<nav data-da=".header-menu,992,2" class="header-contacts-menu">
+						<ul class="header-contacts-menu__list">
+							<li>
+								<div class="header-contacts-menu__title">Телефон</div>
+								<a href="tel:+375173259759" class="header-contacts-menu__link"><i class="bi bi-telephone me-3"></i><span>+375 17 325-97-59</span></a>
+								<ul class="header-contacts-submenu">
+									<li>
+										<a href="tel:+375173748862" class="header-contacts-submenu__link">+375 17 374-88-62</a>
+									</li>
+									<li>
+										<div class="header-contacts-submenu__title">E-mail</div>
+										<a href="mailto:sportfpb@mail.ru" class="header-contacts-submenu__link">sportfpb@mail.ru</a>
+									</li>
+									<li>
+										<div class="header-contacts-submenu__title">Адрес</div>
+										<div>г. Минск, пр-т Победителей, 21</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<div class="btn-burger-menu">
+						<span></span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<nav class="header-menu">
 			<ul class="header-menu__list">
 				<li>
-					<div class="header-menu__link">О нас<i class="bi bi-chevron-down ms-2"></i></div>
+					<div class="header-menu__link header-menu__link_btn">О нас<i class="bi bi-chevron-down ms-2"></i></div>
 					<ul class="header-submenu">
 						<li>
 							<a href="about.html" class="header-submenu__link">О клубе</a>
@@ -81,7 +87,7 @@
 					</ul>
 				</li>
 				<li>
-					<div class="header-menu__link">Спортивно-массовая работа<i class="bi bi-chevron-down ms-2"></i></div>
+					<div class="header-menu__link header-menu__link_btn">Спортивно-массовая работа<i class="bi bi-chevron-down ms-2"></i></div>
 					<ul class="header-submenu">
 						<li>
 							<a href="smw-calendar-fosm.html" class="header-submenu__link">Календарь ФОСМ мероприятий</a>
@@ -98,7 +104,7 @@
 					</ul>
 				</li>
 				<li>
-					<div class="header-menu__link">Спорт высших достижений<i class="bi bi-chevron-down ms-2"></i></div>
+					<div class="header-menu__link header-menu__link_btn">Спорт высших достижений<i class="bi bi-chevron-down ms-2"></i></div>
 					<ul class="header-submenu">
 						<li>
 							<a href="sha-achievements.html" class="header-submenu__link">Достижения профсоюзных спортсменов</a>
@@ -118,13 +124,14 @@
 					<a href="services.html" class="header-menu__link">Услуги</a>
 				</li>
 				<li>
-					<a href="#" class="header-menu__link">Контакты</a>
+					<a href="contacts.html" class="header-menu__link">Контакты</a>
 				</li>
 				<li>
-					<div class="header-menu__link"><i class="bi bi-search"></i></div>
+					<div data-da=".header-top__menu,992,0" class="header-menu__link header-menu__link_btn-search"><i class="bi bi-search"></i></div>
 				</li>
 			</ul>
 		</nav>
+		<div class="header__overlay"></div>
 	</div>
 </header>
 			<main class="page">
@@ -156,7 +163,7 @@
 								<div class="sports-schools-item__icon icon-badminton"></div>
 								<div>Бадминтон</div>
 							</a>
-							<a class="sports-schools-item" href="#">
+							<a class="sports-schools-item" href="item-sportschools-by-sport.html">
 								<div class="sports-schools-item__icon icon-basketball"></div>
 								<div>Баскетбол</div>
 							</a>
