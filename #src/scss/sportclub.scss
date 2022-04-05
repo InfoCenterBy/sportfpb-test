@@ -56,6 +56,8 @@
 
    &__icon {
 		margin: 0px 45px 0px 0px;
+		font-size: 60px;
+		color: $color-blue;
 
 		@media (max-width: $md4+px) {
 			margin: 0px 16px 0px 0px;
@@ -139,7 +141,6 @@
 	}
 
 	&__row {
-		font-weight: 500;
 		color: $color-black;
 
 		i {

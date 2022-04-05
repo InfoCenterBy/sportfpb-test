@@ -265,7 +265,6 @@
 	}
 
 	&__text {
-		font-weight: 500;
 		color: $color-black;
 
 		&:not(:last-child) {
@@ -273,6 +272,7 @@
 		}
 
 		a {
+			font-weight: 500;
 			color: $color-black;
 
 			&:hover {
@@ -709,10 +709,12 @@
 
    &__icon {
 		margin: 0px 24px 0px 0px;
+		font-size: 70px;
+		color: $color-blue;
 
 		@media (max-width: $md4+px) {
 			margin: 0px 16px 0px 0px;
-			background: url('./img') 0 0 no-repeat;
+			font-size: 50px;
 		}
    }
 

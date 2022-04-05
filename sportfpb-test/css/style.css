@@ -25,6 +25,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-document:before {
+  content: "\e937";
+}
+
+.icon-schools:before {
+  content: "\e938";
+}
+
 .icon-acrobatics:before {
   content: "\e900";
 }
@@ -256,6 +264,16 @@
 *:after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
 }
 
 aside,
@@ -643,7 +661,6 @@ body.lock {
 }
 
 .item-contacts__text {
-  font-weight: 500;
   color: #151616;
 }
 
@@ -652,6 +669,7 @@ body.lock {
 }
 
 .item-contacts__text a {
+  font-weight: 500;
   color: #151616;
 }
 
@@ -1038,6 +1056,8 @@ body.lock {
 
 .card-download__icon {
   margin: 0px 24px 0px 0px;
+  font-size: 70px;
+  color: #21388F;
 }
 
 .card-download__content {
@@ -1686,6 +1706,10 @@ body.lock {
   width: 100%;
 }
 
+.footer .logo:before {
+  display: none;
+}
+
 .footer-top {
   margin: 0px 0px 35px 0px;
   display: -webkit-box;
@@ -1700,10 +1724,10 @@ body.lock {
 }
 
 .footer-top__logo {
-  margin: 0px 40px 0px 0px;
+  margin: 0px 50px 0px 0px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 515px;
-          flex: 0 0 515px;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
 }
 
 .footer-top-contacts {
@@ -1746,10 +1770,10 @@ body.lock {
 }
 
 .footer-bottom__copyright {
-  margin: 0px 35px 0px 0px;
+  margin: 0px 50px 0px 0px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 40%;
-          flex: 0 1 40%;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
 }
 
 .footer-bottom__developer {
@@ -1946,6 +1970,8 @@ body.lock {
 
 .item-sportclub-direction__icon {
   margin: 0px 45px 0px 0px;
+  font-size: 60px;
+  color: #21388F;
 }
 
 .item-sportclub-direction__title {
@@ -2021,7 +2047,6 @@ body.lock {
 }
 
 .card-sportschool__row {
-  font-weight: 500;
   color: #151616;
 }
 
@@ -2190,8 +2215,11 @@ body.lock {
   color: #8E8E93;
   font-size: 15px;
   position: absolute;
-  top: 10px;
+  top: 9px;
   left: 15px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .sports-schools__search input {
@@ -2202,7 +2230,7 @@ body.lock {
 
 .sports-schools__search input:focus,
 .sports-schools__search input:hover {
-  border-color: #151616;
+  border-color: #21388F;
   color: #151616;
 }
 
@@ -2747,7 +2775,7 @@ body.lock {
 
   .card-download__icon {
     margin: 0px 16px 0px 0px;
-    background: url("./img") 0 0 no-repeat;
+    font-size: 50px;
   }
 
   .card-download__title {

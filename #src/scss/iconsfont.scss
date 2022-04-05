@@ -24,7 +24,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.icon-document:before {
+	content: "\e937";
+ }
+.icon-schools:before {
+	content: "\e938";
+}
 .icon-acrobatics:before {
   content: "\e900";
 }
