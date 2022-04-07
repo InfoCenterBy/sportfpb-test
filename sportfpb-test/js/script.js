@@ -254,6 +254,33 @@ if (document.querySelector('.slider-news__wrapper')) {
 		},
 	});
 }
+if (document.querySelector('.news-post-slider__wrapper')) {
+	new Swiper('.news-post-slider__wrapper', {
+		observer: true,
+		watchOverflow: true,
+		observeParents: true,
+		slidesPerView: 1,
+		centeredSlides: true,
+		freeMode: true,
+		spaceBetween: 18,
+		loop: true,
+		parallax: true,
+		autoHeight: true,
+		pagination: {
+			el: '.slider-dotts',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.slider-arrow_next',
+			prevEl: '.slider-arrow_prev',
+		},
+		breakpoints: {
+			768: {
+				slidesPerView: 1.2,
+			},
+		},
+	});
+}
 if (document.querySelector('.slider-partners__wrapper')) {
 	new Swiper('.slider-partners__wrapper', {
 		observer: true,
@@ -272,7 +299,7 @@ if (document.querySelector('.slider-partners__wrapper')) {
 			prevEl: '.slider-partners__arrow_prev',
 		},
 		breakpoints: {
-			
+
 			565: {
 				slidesPerView: 2,
 			},

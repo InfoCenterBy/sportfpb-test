@@ -269,3 +269,32 @@ body {
 		height: 380px;
 	}
 }
+.news-post {
+
+	&__content {
+
+		p {
+			width: 100%;
+			max-width: 1100px;
+			margin: 16px auto;
+		}
+	}
+
+	&__date {
+		color: $color-gray;
+		width: 100%;
+		max-width: 1100px;
+		margin: 16px auto;
+	}
+
+	&__photo {
+		width: 100%;
+		max-width: 920px;
+		margin: 32px auto;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
