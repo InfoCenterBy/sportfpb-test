@@ -424,19 +424,19 @@
       padding: 15px;
    }
 
-   &__icon {
-      margin: 0px 40px 0px 0px;
+	&__icon {
+		margin: 0px 24px 0px 0px;
+		font-size: 70px;
+		color: $color-blue;
 
-      @media (max-width: $md4+px) {
-         margin: 0px 20px 0px 0px;
-
-         img {
-            max-width: 50px;
-         }
-      }
+		@media (max-width: $md4+px) {
+			margin: 0px 16px 0px 0px;
+			font-size: 50px;
+		}
    }
 
    &__title {
+		margin: 0px 0px 8px 0px;
       color: $color-gray;
    }
 
@@ -836,5 +836,252 @@
 
 	&:not(:last-child) {
 		margin: 0px 0px 24px 0px;
+	}
+}
+.social-links {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	a {
+		margin: 0px 40px 0px 0px;
+		img {
+			width: 40px;
+			height: 40px;
+
+		}
+
+		&:hover {
+			transform: translateY(-2px);
+		}
+
+		@media (max-width: $md4+px) {
+			margin: 0px 20px 0px 0px;
+		}
+	}
+}
+.card-promotions {
+	padding: 16px;
+	height: 100%;
+   border: 2px solid $color-gray-light;
+
+	@media (max-width: $md4+px) {
+		padding: 12px;
+	}
+
+	&__info {
+		p {
+			font-weight: 500;
+
+			&:last-child {
+				margin: 0px 0px 0px 0px;
+			}
+		}
+	}
+}
+.item-sportclub-direction {
+	height: 100%;
+	padding: 40px 24px;
+	background-color: #fff;
+	border: 3px solid #fff;
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	i {
+		opacity: 0;
+		overflow: hidden;
+		font-size: 28px;
+		color: $color-blue;
+		position: absolute;
+		top: 5px;
+		right: 30px;
+		transition: all 0.3s ease 0s;
+	}
+
+	&:hover {
+		border-color: $color-blue;
+
+		i {
+			opacity: 1;
+			overflow: visible;
+			right: 24px;
+		}
+
+		.item-sportclub-direction__title {
+			color: $color-blue;
+		}
+	}
+
+	@media screen and (max-width: $md2+px) {
+		border-color: $color-blue;
+
+		i {
+			opacity: 1;
+			overflow: visible;
+			right: 24px;
+		}
+
+		.item-sportclub-direction__title {
+			color: $color-blue;
+		}
+	}
+
+	@media (max-width: $md4+px) {
+		padding: 40px 16px;
+
+		i {
+			right: 16px;
+		}
+	}
+
+   &__icon {
+		margin: 0px 45px 0px 0px;
+		font-size: 60px;
+		color: $color-blue;
+
+		@media (max-width: $md4+px) {
+			margin: 0px 16px 0px 0px;
+		}
+   }
+
+
+   &__title {
+		margin: 0px 0px 24px 0px;
+		font-size: 18px;
+		color: $color-black;
+		font-weight: 500;
+   }
+
+   &__info {
+		color: $color-gray;
+		font-size: 14px;
+		font-weight: 500;
+
+		div:not(:last-child) {
+			margin: 0px 0px 8px 0px;
+		}
+
+   }
+}
+.card-sportschool {
+	border: 2px solid $color-gray-light;
+	display: flex;
+	transition: border-color 0.3s ease 0s;
+
+	@media (max-width: $md3+px) {
+		display: block;
+	}
+
+	&:hover {
+		border-color: $color-blue;
+		.item-sportschools-sportclub__contacts {
+			border-color: $color-blue;
+		}
+
+		.item-sportschools-sportclub__info {
+			color: $color-black;
+		}
+	}
+
+	&:not(:last-child) {
+		margin: 0px 0px 24px 0px;
+	}
+
+	&__info {
+		flex: 0 1 65%;
+		padding: 24px;
+		font-size: 14px;
+		color: $color-gray;
+
+		@media (max-width: $md4+px) {
+			padding: 15px;
+		}
+	}
+
+	&__icons {
+		margin: 24px 0px 0px 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__contacts {
+		flex: 0 1 35%;
+		padding: 24px;
+		border-left: 2px solid $color-gray-light;
+		transition: border-color 0.3s ease 0s;
+
+		@media (max-width: $md3+px) {
+			border-left: none;
+			border-top: 2px solid $color-gray-light;
+		}
+
+		@media (max-width: $md4+px) {
+			padding: 15px;
+		}
+	}
+
+	&__row {
+		color: $color-black;
+
+		i {
+			position: relative;
+			transform: translateY(-3px);
+			font-size: 24px;
+		}
+
+		a {
+			font-weight: 500;
+			color: $color-black;
+
+			&:hover {
+				color: $color-blue;
+			}
+		}
+
+		&:not(:last-child) {
+			margin: 0px 0px 16px 0px;
+		}
+	}
+}
+.item-icon-sportschool {
+	width: 42px;
+	height: 42px;
+	font-size: 30px;
+	color: $color-blue;
+	border: 1px solid $color-gray-light;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+
+		&:not(:last-child) {
+			margin: 0px 15px 0px 0px;
+		}
+
+		img {
+			max-width: 30px;
+		}
+}
+.contacts-sportclub {
+	&__map {
+		height: 450px;
+
+		iframe {
+			width: 100%;
+			height: 100%;
+
+		}
+
+		@media (max-width: $md4+px) {
+			height: 380px;
+		}
+	}
+
+	&__contacts {
+		.item-contacts {
+			&:not(:last-child) {
+				margin: 0px 0px 24px 0px;
+			}
+		}
 	}
 }

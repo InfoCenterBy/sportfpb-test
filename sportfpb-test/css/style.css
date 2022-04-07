@@ -822,10 +822,13 @@ body.lock {
 }
 
 .item-sport__icon {
-  margin: 0px 40px 0px 0px;
+  margin: 0px 24px 0px 0px;
+  font-size: 70px;
+  color: #21388F;
 }
 
 .item-sport__title {
+  margin: 0px 0px 8px 0px;
   color: #8E8E93;
 }
 
@@ -1184,6 +1187,228 @@ body.lock {
 }
 
 .item-achievement:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social-links a {
+  margin: 0px 40px 0px 0px;
+}
+
+.social-links a img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-links a:hover {
+  -webkit-transform: translateY(-2px);
+      -ms-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.card-promotions {
+  padding: 16px;
+  height: 100%;
+  border: 2px solid #E5E5E5;
+}
+
+.card-promotions__info p {
+  font-weight: 500;
+}
+
+.card-promotions__info p:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.item-sportclub-direction {
+  height: 100%;
+  padding: 40px 24px;
+  background-color: #fff;
+  border: 3px solid #fff;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-sportclub-direction i {
+  opacity: 0;
+  overflow: hidden;
+  font-size: 28px;
+  color: #21388F;
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.item-sportclub-direction:hover {
+  border-color: #21388F;
+}
+
+.item-sportclub-direction:hover i {
+  opacity: 1;
+  overflow: visible;
+  right: 24px;
+}
+
+.item-sportclub-direction:hover .item-sportclub-direction__title {
+  color: #21388F;
+}
+
+.item-sportclub-direction__icon {
+  margin: 0px 45px 0px 0px;
+  font-size: 60px;
+  color: #21388F;
+}
+
+.item-sportclub-direction__title {
+  margin: 0px 0px 24px 0px;
+  font-size: 18px;
+  color: #151616;
+  font-weight: 500;
+}
+
+.item-sportclub-direction__info {
+  color: #8E8E93;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.item-sportclub-direction__info div:not(:last-child) {
+  margin: 0px 0px 8px 0px;
+}
+
+.card-sportschool {
+  border: 2px solid #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: border-color 0.3s ease 0s;
+  -o-transition: border-color 0.3s ease 0s;
+  transition: border-color 0.3s ease 0s;
+}
+
+.card-sportschool:hover {
+  border-color: #21388F;
+}
+
+.card-sportschool:hover .item-sportschools-sportclub__contacts {
+  border-color: #21388F;
+}
+
+.card-sportschool:hover .item-sportschools-sportclub__info {
+  color: #151616;
+}
+
+.card-sportschool:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+
+.card-sportschool__info {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
+  padding: 24px;
+  font-size: 14px;
+  color: #8E8E93;
+}
+
+.card-sportschool__icons {
+  margin: 24px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-sportschool__contacts {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+  padding: 24px;
+  border-left: 2px solid #E5E5E5;
+  -webkit-transition: border-color 0.3s ease 0s;
+  -o-transition: border-color 0.3s ease 0s;
+  transition: border-color 0.3s ease 0s;
+}
+
+.card-sportschool__row {
+  color: #151616;
+}
+
+.card-sportschool__row i {
+  position: relative;
+  -webkit-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+          transform: translateY(-3px);
+  font-size: 24px;
+}
+
+.card-sportschool__row a {
+  font-weight: 500;
+  color: #151616;
+}
+
+.card-sportschool__row a:hover {
+  color: #21388F;
+}
+
+.card-sportschool__row:not(:last-child) {
+  margin: 0px 0px 16px 0px;
+}
+
+.item-icon-sportschool {
+  width: 42px;
+  height: 42px;
+  font-size: 30px;
+  color: #21388F;
+  border: 1px solid #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-icon-sportschool:not(:last-child) {
+  margin: 0px 15px 0px 0px;
+}
+
+.item-icon-sportschool img {
+  max-width: 30px;
+}
+
+.contacts-sportclub__map {
+  height: 450px;
+}
+
+.contacts-sportclub__map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts-sportclub__contacts .item-contacts:not(:last-child) {
   margin: 0px 0px 24px 0px;
 }
 
@@ -2005,28 +2230,21 @@ body.lock {
           filter: grayscale(0%);
 }
 
-.news-post-slider {
-  width: 100%;
-  max-width: 1100px;
-  margin: 32px auto;
-  position: relative;
-}
-
-.swiper-slide-prev .item-slider-news-post,
-.swiper-slide-next .item-slider-news-post {
+.swiper-slide-prev .slider-gallery__item,
+.swiper-slide-next .slider-gallery__item {
   opacity: 0.2;
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
   transition: all 1s ease 0s;
 }
 
-.swiper-slide-prev .item-slider-news-post {
+.swiper-slide-prev .slider-gallery__item {
   -webkit-transform: scale(0.9) translateX(50px);
       -ms-transform: scale(0.9) translateX(50px);
           transform: scale(0.9) translateX(50px);
 }
 
-.swiper-slide-next .item-slider-news-post {
+.swiper-slide-next .slider-gallery__item {
   -webkit-transform: scale(0.9) translateX(-50px);
       -ms-transform: scale(0.9) translateX(-50px);
           transform: scale(0.9) translateX(-50px);
@@ -2111,188 +2329,6 @@ body.lock {
 .swiper-pagination-bullets.swiper-pagination-horizontal.slider-dotts .swiper-pagination-bullet-active:hover {
   opacity: 1;
   cursor: auto;
-}
-
-.item-sportclub-direction {
-  height: 100%;
-  padding: 40px 24px;
-  background-color: #fff;
-  border: 3px solid #fff;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.item-sportclub-direction i {
-  opacity: 0;
-  overflow: hidden;
-  font-size: 28px;
-  color: #21388F;
-  position: absolute;
-  top: 5px;
-  right: 30px;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.item-sportclub-direction:hover {
-  border-color: #21388F;
-}
-
-.item-sportclub-direction:hover i {
-  opacity: 1;
-  overflow: visible;
-  right: 24px;
-}
-
-.item-sportclub-direction:hover .item-sportclub-direction__title {
-  color: #21388F;
-}
-
-.item-sportclub-direction__icon {
-  margin: 0px 45px 0px 0px;
-  font-size: 60px;
-  color: #21388F;
-}
-
-.item-sportclub-direction__title {
-  margin: 0px 0px 24px 0px;
-  font-size: 18px;
-  color: #151616;
-  font-weight: 500;
-}
-
-.item-sportclub-direction__info {
-  color: #8E8E93;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.item-sportclub-direction__info div:not(:last-child) {
-  margin: 0px 0px 8px 0px;
-}
-
-.card-sportschool {
-  border: 2px solid #E5E5E5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: border-color 0.3s ease 0s;
-  -o-transition: border-color 0.3s ease 0s;
-  transition: border-color 0.3s ease 0s;
-}
-
-.card-sportschool:hover {
-  border-color: #21388F;
-}
-
-.card-sportschool:hover .item-sportschools-sportclub__contacts {
-  border-color: #21388F;
-}
-
-.card-sportschool:hover .item-sportschools-sportclub__info {
-  color: #151616;
-}
-
-.card-sportschool:not(:last-child) {
-  margin: 0px 0px 24px 0px;
-}
-
-.card-sportschool__info {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 65%;
-          flex: 0 1 65%;
-  padding: 24px;
-  font-size: 14px;
-  color: #8E8E93;
-}
-
-.card-sportschool__icons {
-  margin: 24px 0px 0px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.card-sportschool__contacts {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 35%;
-          flex: 0 1 35%;
-  padding: 24px;
-  border-left: 2px solid #E5E5E5;
-  -webkit-transition: border-color 0.3s ease 0s;
-  -o-transition: border-color 0.3s ease 0s;
-  transition: border-color 0.3s ease 0s;
-}
-
-.card-sportschool__row {
-  color: #151616;
-}
-
-.card-sportschool__row i {
-  position: relative;
-  -webkit-transform: translateY(-3px);
-      -ms-transform: translateY(-3px);
-          transform: translateY(-3px);
-  font-size: 24px;
-}
-
-.card-sportschool__row a {
-  font-weight: 500;
-  color: #151616;
-}
-
-.card-sportschool__row a:hover {
-  color: #21388F;
-}
-
-.card-sportschool__row:not(:last-child) {
-  margin: 0px 0px 16px 0px;
-}
-
-.item-icon-sportschool {
-  width: 42px;
-  height: 42px;
-  font-size: 30px;
-  color: #21388F;
-  border: 1px solid #E5E5E5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.item-icon-sportschool:not(:last-child) {
-  margin: 0px 15px 0px 0px;
-}
-
-.item-icon-sportschool img {
-  max-width: 30px;
-}
-
-.contacts-sportclub__map {
-  height: 450px;
-}
-
-.contacts-sportclub__map iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.contacts-sportclub__contacts .item-contacts:not(:last-child) {
-  margin: 0px 0px 24px 0px;
 }
 
 .page {
@@ -2492,6 +2528,60 @@ body.lock {
   height: auto;
 }
 
+.news-post__slider {
+  width: 100%;
+  max-width: 1100px;
+  margin: 32px auto;
+  position: relative;
+}
+
+.page-404__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-404__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 700px;
+          flex: 0 1 700px;
+}
+
+.page-404__info {
+  margin-left: 140px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 460px;
+          flex: 0 1 460px;
+}
+
+.page-404__info h1,
+.page-404__info P {
+  margin-bottom: 48px;
+}
+
+.page-404__button {
+  display: inline-block;
+  width: 284px;
+  padding: 14px 0;
+  font-size: 20px;
+  color: #FCFCFC;
+  font-weight: 600;
+  background-color: #21388F;
+  text-align: center;
+}
+
+.page-404__button:hover {
+  color: #FCFCFC;
+  -webkit-box-shadow: -20px 20px 29px -19px rgba(33, 56, 143, 0.6);
+          box-shadow: -20px 20px 29px -19px rgba(33, 56, 143, 0.6);
+  -webkit-transform: translate(3px, -3px);
+      -ms-transform: translate(3px, -3px);
+          transform: translate(3px, -3px);
+}
+
 @media (min-width: 480px) {
   .modal-coach__content {
     margin: 0 8px;
@@ -2570,6 +2660,15 @@ body.lock {
 @media (max-width: 1680px) {
   .main-title {
     font-size: calc(22px + 10 * ((100vw - 320px) / 1360));
+  }
+
+  .page-404__info {
+    margin-left: calc(0px + 140 * ((100vw - 320px) / 1360));
+  }
+
+  .page-404__info h1,
+  .page-404__info P {
+    margin-bottom: calc(24px + 24 * ((100vw - 320px) / 1360));
   }
 }
 
@@ -2927,6 +3026,15 @@ body.lock {
     margin: 0px auto 24px;
   }
 
+  .card-sportschool {
+    display: block;
+  }
+
+  .card-sportschool__contacts {
+    border-left: none;
+    border-top: 2px solid #E5E5E5;
+  }
+
   .header-menu {
     padding: 110px 18px 30px;
   }
@@ -2943,17 +3051,21 @@ body.lock {
     display: none;
   }
 
-  .card-sportschool {
+  .item-sports-clubs {
+    min-height: 200px;
+  }
+
+  .page-404__body {
     display: block;
   }
 
-  .card-sportschool__contacts {
-    border-left: none;
-    border-top: 2px solid #E5E5E5;
+  .page-404__img {
+    margin: 0 auto;
+    max-width: 400px;
   }
 
-  .item-sports-clubs {
-    min-height: 200px;
+  .page-404__info {
+    margin: 0px 0px 50px 0px;
   }
 }
 
@@ -2967,11 +3079,8 @@ body.lock {
   }
 
   .item-sport__icon {
-    margin: 0px 20px 0px 0px;
-  }
-
-  .item-sport__icon img {
-    max-width: 50px;
+    margin: 0px 16px 0px 0px;
+    font-size: 50px;
   }
 
   .item-accordion__body {
@@ -3004,8 +3113,12 @@ body.lock {
     padding: 24px 0 16px;
   }
 
-  .footer {
-    padding: 20px 0px;
+  .social-links a {
+    margin: 0px 20px 0px 0px;
+  }
+
+  .card-promotions {
+    padding: 12px;
   }
 
   .item-sportclub-direction {
@@ -3030,6 +3143,10 @@ body.lock {
 
   .contacts-sportclub__map {
     height: 380px;
+  }
+
+  .footer {
+    padding: 20px 0px;
   }
 
   .contacts-map {

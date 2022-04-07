@@ -91,8 +91,8 @@ if (document.querySelector('.slider-news__wrapper')) {
 		},
 	});
 }
-if (document.querySelector('.news-post-slider__wrapper')) {
-	new Swiper('.news-post-slider__wrapper', {
+if (document.querySelector('.slider-gallery')) {
+	new Swiper('.slider-gallery', {
 		observer: true,
 		watchOverflow: true,
 		observeParents: true,
