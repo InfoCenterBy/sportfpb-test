@@ -463,6 +463,20 @@ body.lock {
   font-weight: 600;
 }
 
+.button {
+  padding: 14px 42px;
+  font-size: 20px;
+  color: #FCFCFC;
+  background-color: #21388F;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+  background-color: #02145A;
+}
+
 .link-more {
   color: #151616;
   text-decoration: underline;
@@ -1826,13 +1840,14 @@ body.lock {
   transition: all 0.3s ease 0s;
 }
 
-.header-menu.active ~ .header__overlay {
+.header-menu.active ~ .header__overlay,
+.header-search.active ~ .header__overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #FCFCFC;
+  background-color: rgba(142, 142, 147, 0.5);
   z-index: 2;
 }
 
@@ -1974,6 +1989,70 @@ body.lock {
     -webkit-transform: translateY(9px) rotate(0deg);
             transform: translateY(9px) rotate(0deg);
   }
+}
+
+.header-search {
+  width: 100%;
+  padding: 24px 0;
+  background-color: #FCFCFC;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.header-search.active {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.header-search__body {
+  padding: 0px 72px 0px 0px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-search__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header-search__input input {
+  width: 100%;
+  font-size: 20px;
+  color: #151616;
+}
+
+.header-search__close {
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 24px;
+}
+
+.header-search__close i {
+  font-size: 24px;
+  color: #151616;
+}
+
+.header-search__close:hover i {
+  opacity: 0.5;
 }
 
 .footer {
@@ -3143,6 +3222,18 @@ body.lock {
 
   .contacts-sportclub__map {
     height: 380px;
+  }
+
+  .header-search__body {
+    display: block;
+  }
+
+  .header-search__button {
+    margin: 24px 0px 0px 0px;
+  }
+
+  .header-search__close {
+    top: 0;
   }
 
   .footer {
