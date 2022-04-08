@@ -2583,17 +2583,19 @@ body.lock {
   height: 100%;
 }
 
-.news-post__content p {
+.news-post__content {
   width: 100%;
   max-width: 1100px;
-  margin: 16px auto;
+  margin: 0 auto;
+}
+
+.news-post__content p {
+  margin: 16px 0;
 }
 
 .news-post__date {
   color: #8E8E93;
-  width: 100%;
-  max-width: 1100px;
-  margin: 16px auto;
+  margin: 16px 0;
 }
 
 .news-post__photo {
@@ -2608,10 +2610,7 @@ body.lock {
 }
 
 .news-post__slider {
-  width: 100%;
-  max-width: 1100px;
-  margin: 32px auto;
-  position: relative;
+  margin: 32px 0;
 }
 
 .page-404__body {
