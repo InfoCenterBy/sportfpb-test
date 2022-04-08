@@ -95,6 +95,17 @@
    color: $color-blue;
    font-weight: 600;
 }
+.button {
+	padding: 14px 42px;
+	font-size: 20px;
+	color: $color-white;
+	background-color: $color-blue;
+	transition: all 0.3s ease 0s;
+
+	&:hover {
+		background-color: $color-blue-dark;
+	}
+}
 .link-more {
    color: $color-black;
    text-decoration: underline;
