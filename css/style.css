@@ -811,7 +811,7 @@ body.lock {
 }
 
 .item-employee__row a {
-  font-weight: 500;
+  font-weight: 600;
   color: #151616;
 }
 
@@ -2035,6 +2035,7 @@ body.lock {
 
 .header-search__input input {
   width: 100%;
+  padding: 14px 24px 14px 0px;
   font-size: 20px;
   color: #151616;
 }
@@ -2042,12 +2043,12 @@ body.lock {
 .header-search__close {
   cursor: pointer;
   position: absolute;
-  top: 12px;
+  top: 6px;
   right: 24px;
 }
 
 .header-search__close i {
-  font-size: 24px;
+  font-size: 34px;
   color: #151616;
 }
 
@@ -3229,10 +3230,6 @@ body.lock {
 
   .header-search__button {
     margin: 24px 0px 0px 0px;
-  }
-
-  .header-search__close {
-    top: 0;
   }
 
   .footer {
