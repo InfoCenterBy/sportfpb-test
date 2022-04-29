@@ -553,6 +553,10 @@ body.lock {
   margin: 0px 0px 16px 0px;
 }
 
+.sidebar__list li > ul {
+  margin: 16px 0px 0px 0px;
+}
+
 .sidebar__link {
   font-size: 18px;
   color: #151616;

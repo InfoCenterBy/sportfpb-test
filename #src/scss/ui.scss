@@ -174,6 +174,10 @@
       li:not(:last-child) {
          margin: 0px 0px 16px 0px;
       }
+
+		li > ul {
+			margin: 16px 0px 0px 0px;
+		}
    }
 
    &__link {
