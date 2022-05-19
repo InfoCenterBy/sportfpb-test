@@ -484,6 +484,16 @@ body.lock {
   opacity: 0.5;
 }
 
+.link {
+  font-size: 18px;
+  color: #151616;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: #21388F;
+}
+
 .link-decor {
   font-size: 18px;
   color: #21388F;
@@ -510,6 +520,21 @@ body.lock {
 
 .link-decor:hover:before {
   width: 100%;
+}
+
+figure {
+  margin: 24px 0;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure figcaption {
+  margin: 8px 0px 0px 0px;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .breadcrumb {
@@ -2549,7 +2574,7 @@ body.lock {
 
 .main-search__input input {
   width: 100%;
-  padding: 13px 10px;
+  padding: 13px 20px;
   font-size: 20px;
   color: #151616;
   background: #F2F2F2;
@@ -2584,7 +2609,7 @@ body.lock {
 }
 
 .item-result__title a {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   color: #02145A;
 }
