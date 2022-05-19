@@ -7,7 +7,6 @@
 
 //<Подключаем шрифты>=======================================================================================
 //&display=swap&subset=cyrillic-ext
-@import "fonts";
 @import "iconsfont";
 //</Подключаем шрифты>=======================================================================================
 
@@ -68,15 +67,11 @@ body {
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-// @import "forms";
 @import "ui";
 @import "simple-calendar";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
 
-//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-//@import "datepicker";
-//@import "lightgallery";
-//@import "pagging";
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================;
 @import "header";
 @import "footer";
 @import "slider";
@@ -346,6 +341,71 @@ body {
 			color: $color-white;
 			box-shadow: -20px 20px 29px -19px rgba(33, 56, 143, 0.6);
 			transform: translate(3px, -3px);
+		}
+	}
+}
+.main-search {
+
+	&__form {
+		margin: 0px 0px 15px 0px;
+		display: flex;
+		align-items: center;
+
+		@media (max-width: $md4+px) {
+			display: block;
+		}
+	}
+
+	&__input {
+		flex: 1 1 auto;
+
+		input {
+			width: 100%;
+			padding: 13px 10px;
+			font-size: 20px;
+			color: $color-black;
+			background: #F2F2F2;
+			border: 1px solid #D2D1D1;
+			transition: all 0.3s ease 0s;
+
+			&:focus,
+			&:hover {
+				border: 1px solid $color-blue;
+			}
+		}
+	}
+
+	&__button {
+		@media (max-width: $md4+px) {
+			margin: 12px 0px 0px 0px;
+		}
+	}
+
+	&__num-result {
+		color: $color-gray;
+		font-weight: 500;
+	}
+
+	&__result {
+		margin: 40px 0px 80px;
+	}
+}
+.item-result {
+	margin: 0px 0px 25px 0px;
+	padding: 0px 0px 25px 0px;
+	border-bottom: 1px solid $color-gray-light;
+
+	&__title {
+		margin: 0px 0px 15px 0px;
+
+		a {
+			font-size: 20px;
+			font-weight: 500;
+			color: $color-blue-dark;
+
+			&:hover {
+				color: $color-blue;
+			}
 		}
 	}
 }

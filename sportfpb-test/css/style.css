@@ -2,255 +2,252 @@
 
 @use "sass:math";
 @font-face {
-  font-family: 'icons';
-  src: url("../fonts/icons.eot?xrlneo");
-  src: url("../fonts/icons.eot?xrlneo#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?xrlneo") format("truetype"), url("../fonts/icons.woff?xrlneo") format("woff"), url("../fonts/icons.svg?xrlneo#icons") format("svg");
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?rhnuqn");
+  src: url("../fonts/icomoon.eot?rhnuqn#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rhnuqn") format("truetype"), url("../fonts/icomoon.woff?rhnuqn") format("woff"), url("../fonts/icomoon.svg?rhnuqn#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icons' !important;
-  speak: never;
+[class^='icon-'],
+[class*=' icon-'] {
+  font-family: 'icomoon' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-document:before {
-  content: "\e937";
-}
-
-.icon-schools:before {
-  content: "\e938";
-}
-
 .icon-acrobatics:before {
-  content: "\e900";
+  content: '\e900';
 }
 
 .icon-aerobics:before {
-  content: "\e901";
+  content: '\e901';
 }
 
 .icon-archery:before {
-  content: "\e902";
+  content: '\e902';
 }
 
 .icon-arm-wrestling:before {
-  content: "\e903";
+  content: '\e903';
 }
 
 .icon-athletics:before {
-  content: "\e904";
+  content: '\e904';
 }
 
 .icon-badminton:before {
-  content: "\e905";
+  content: '\e905';
 }
 
 .icon-baseball:before {
-  content: "\e906";
+  content: '\e906';
 }
 
 .icon-basketball:before {
-  content: "\e907";
+  content: '\e907';
 }
 
 .icon-biathlon:before {
-  content: "\e908";
+  content: '\e908';
 }
 
 .icon-billiard:before {
-  content: "\e909";
+  content: '\e909';
 }
 
 .icon-body-building:before {
-  content: "\e90a";
+  content: '\e90a';
 }
 
 .icon-boxing:before {
-  content: "\e90b";
+  content: '\e90b';
 }
 
 .icon-bullet-shooting:before {
-  content: "\e90c";
+  content: '\e90c';
 }
 
 .icon-chess:before {
-  content: "\e90d";
+  content: '\e90d';
 }
 
 .icon-city-sports:before {
-  content: "\e90e";
+  content: '\e90e';
 }
 
 .icon-cycling:before {
-  content: "\e90f";
+  content: '\e90f';
 }
 
 .icon-diving:before {
-  content: "\e910";
+  content: '\e910';
+}
+
+.icon-document:before {
+  content: '\e911';
 }
 
 .icon-fencing:before {
-  content: "\e911";
+  content: '\e912';
 }
 
 .icon-field-hockey:before {
-  content: "\e912";
+  content: '\e913';
 }
 
 .icon-fire-rescue-sport:before {
-  content: "\e913";
+  content: '\e914';
 }
 
 .icon-football:before {
-  content: "\e914";
+  content: '\e915';
 }
 
 .icon-freestyle-wrestling:before {
-  content: "\e915";
+  content: '\e916';
 }
 
 .icon-greco-roman-wrestling:before {
-  content: "\e916";
+  content: '\e917';
 }
 
 .icon-handball:before {
-  content: "\e917";
+  content: '\e918';
 }
 
 .icon-horseback-riding:before {
-  content: "\e918";
+  content: '\e919';
 }
 
 .icon-judo:before {
-  content: "\e919";
+  content: '\e91a';
 }
 
 .icon-karate:before {
-  content: "\e91a";
+  content: '\e91b';
 }
 
 .icon-kayaking:before {
-  content: "\e91b";
+  content: '\e91c';
 }
 
 .icon-kickboxing:before {
-  content: "\e91c";
+  content: '\e91d';
 }
 
 .icon-mountain-skiing:before {
-  content: "\e91d";
+  content: '\e91e';
 }
 
 .icon-nordic-combined:before {
-  content: "\e91e";
+  content: '\e91f';
 }
 
 .icon-orienteering:before {
-  content: "\e91f";
+  content: '\e920';
 }
 
 .icon-powerlifting:before {
-  content: "\e920";
+  content: '\e921';
 }
 
 .icon-rhythmic-gymnastics:before {
-  content: "\e921";
+  content: '\e922';
 }
 
 .icon-rock-climbing:before {
-  content: "\e922";
+  content: '\e923';
 }
 
 .icon-rowing:before {
-  content: "\e923";
+  content: '\e924';
 }
 
 .icon-rowing-slalom:before {
-  content: "\e924";
+  content: '\e925';
 }
 
 .icon-sailing:before {
-  content: "\e925";
+  content: '\e926';
 }
 
 .icon-sambo:before {
-  content: "\e926";
+  content: '\e927';
+}
+
+.icon-schools:before {
+  content: '\e928';
 }
 
 .icon-short-track:before {
-  content: "\e927";
+  content: '\e929';
 }
 
 .icon-skating:before {
-  content: "\e928";
+  content: '\e92a';
 }
 
 .icon-ski-jumping:before {
-  content: "\e929";
+  content: '\e92b';
 }
 
 .icon-ski-race:before {
-  content: "\e92a";
+  content: '\e92c';
 }
 
 .icon-sports-gymnastics:before {
-  content: "\e92b";
+  content: '\e92d';
 }
 
 .icon-swimming:before {
-  content: "\e92c";
+  content: '\e92e';
 }
 
 .icon-synchronized-swimming:before {
-  content: "\e92d";
+  content: '\e92f';
 }
 
 .icon-table-tennis:before {
-  content: "\e92e";
+  content: '\e930';
 }
 
 .icon-taekwondo:before {
-  content: "\e92f";
+  content: '\e931';
 }
 
 .icon-tennis:before {
-  content: "\e930";
+  content: '\e932';
 }
 
 .icon-thai-boxing:before {
-  content: "\e931";
+  content: '\e933';
 }
 
 .icon-triathlon:before {
-  content: "\e932";
+  content: '\e934';
 }
 
 .icon-volleyball:before {
-  content: "\e933";
+  content: '\e935';
 }
 
 .icon-weightlifting:before {
-  content: "\e934";
+  content: '\e936';
 }
 
 .icon-weight-lifting:before {
-  content: "\e935";
+  content: '\e937';
 }
 
 .icon-wushu:before {
-  content: "\e936";
+  content: '\e938';
 }
 
 * {
@@ -774,7 +771,6 @@ body.lock {
 }
 
 .item-employee {
-  height: 100%;
   border: 2px solid #E5E5E5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1118,7 +1114,7 @@ body.lock {
   height: 100%;
   color: #151616;
   padding: 16px;
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #E5E5E5;
   position: relative;
   display: -webkit-box;
@@ -1143,7 +1139,6 @@ body.lock {
 }
 
 .card-download:hover {
-  color: #151616;
   border-color: #21388F;
 }
 
@@ -1160,20 +1155,30 @@ body.lock {
 }
 
 .card-download__content {
-  width: 100%;
-}
-
-.card-download__title {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 24px 0;
+}
+
+.card-download__title {
+  display: block;
+  margin: 24px 0;
+  color: #151616;
   font-weight: 500;
 }
 
 .card-download__download {
   text-align: right;
+}
+
+.card-download__download a {
+  color: #151616;
   text-decoration: underline;
+}
+
+.card-download__download a:hover {
+  color: #21388F;
+  text-decoration: none;
 }
 
 .item-achievement {
@@ -1890,9 +1895,6 @@ body.lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .header-search__input {
@@ -2529,6 +2531,68 @@ body.lock {
           transform: translate(3px, -3px);
 }
 
+.main-search__form {
+  margin: 0px 0px 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-search__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.main-search__input input {
+  width: 100%;
+  padding: 13px 10px;
+  font-size: 20px;
+  color: #151616;
+  background: #F2F2F2;
+  border: 1px solid #D2D1D1;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.main-search__input input:focus,
+.main-search__input input:hover {
+  border: 1px solid #21388F;
+}
+
+.main-search__num-result {
+  color: #8E8E93;
+  font-weight: 500;
+}
+
+.main-search__result {
+  margin: 40px 0px 80px;
+}
+
+.item-result {
+  margin: 0px 0px 25px 0px;
+  padding: 0px 0px 25px 0px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.item-result__title {
+  margin: 0px 0px 15px 0px;
+}
+
+.item-result__title a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #02145A;
+}
+
+.item-result__title a:hover {
+  color: #21388F;
+}
+
 @media (min-width: 480px) {
   .modal-coach__content {
     margin: 0 8px;
@@ -3044,7 +3108,7 @@ body.lock {
   }
 
   .card-download__title {
-    padding: 24px 0 16px;
+    margin: 24px 0 16px;
   }
 
   .social-links a {
@@ -3093,6 +3157,14 @@ body.lock {
 
   .contacts-map {
     height: 380px;
+  }
+
+  .main-search__form {
+    display: block;
+  }
+
+  .main-search__button {
+    margin: 12px 0px 0px 0px;
   }
 }
 

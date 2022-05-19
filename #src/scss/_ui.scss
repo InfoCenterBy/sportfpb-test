@@ -367,7 +367,7 @@
 	}
 }
 .item-employee {
-   height: 100%;
+   // height: 100%;
    border: 2px solid $color-gray-light;
    display: flex;
    margin: 0px 0px 32px 0px;
@@ -754,7 +754,7 @@
 	height: 100%;
 	color: $color-black;
 	padding: 16px;
-	background-color: #fff;
+	background-color: #ffffff;
 	border: 2px solid $color-gray-light;
 	position: relative;
 	display: flex;
@@ -772,7 +772,6 @@
 	}
 
 	&:hover {
-		color: $color-black;
 		border-color: $color-blue;
 
 		i {
@@ -804,22 +803,32 @@
    }
 
    &__content {
-		width: 100%;
+		flex: 1 1 auto;
 	}
 
    &__title {
-		flex: 1 1 auto;
-		padding: 24px 0;
+		display: block;
+		margin: 24px 0;
+		color: $color-black;
 		font-weight: 500;
 
 		@media (max-width: $md4+px) {
-			padding: 24px 0 16px;
+			margin: 24px 0 16px;
 		}
    }
 
    &__download {
 		text-align: right;
-		text-decoration: underline;
+
+		a {
+			color: $color-black;
+			text-decoration: underline;
+
+			&:hover {
+				color: $color-blue;
+				text-decoration: none;
+			}
+		}
    }
 }
 .item-achievement {

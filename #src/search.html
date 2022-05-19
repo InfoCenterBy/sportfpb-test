@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Услуги, оказываемые учреждением «Спортивный клуб федерации профсоюзов Беларуси»"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{})
+			<main class="page">
+				<nav aria-label="breadcrumb">
+					<div class='container'>
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Поиск</li>
+						</ol>
+					</div>
+				</nav>
+				<section class="mb-5">
+					<div class='container'>
+						<h1 class="main-title mb-4">Результаты поиска</h1>
+						<div class="main-search">
+							<form class="main-search__form">
+								<div class="main-search__input">
+									<input type="text" placeholder="Что будем искать?">
+								</div>
+								<div class="main-search__button">
+									<button class="button" type="submit">Найти</button>
+								</div>
+							</form>
+							<div class="main-search__num-result">Найдено: <span>2</span></div>
+							<div class="main-search__result">
+								<div class="item-result">
+									<h4 class="h4 item-result__title"><a href="#" class="">Футбол</a></h4>
+									<div class="item-result__preview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque praesentium alias pariatur, voluptatibus consequatur a quas veritatis, amet ratione aliquid nemo quasi facere saepe enim, fugiat vero inventore tempore nobis.</div>
+								</div>
+								<div class="item-result">
+									<h4 class="h4 item-result__title"><a href="#" class="">Футбол</a></h4>
+									<div class="item-result__preview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque praesentium alias pariatur, voluptatibus consequatur a quas veritatis, amet ratione aliquid nemo quasi facere saepe enim, fugiat vero inventore tempore nobis.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_js.html',{})
+	</body>
+</html>
