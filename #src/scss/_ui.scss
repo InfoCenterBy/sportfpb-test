@@ -162,6 +162,24 @@ figure {
 		font-style: italic;
 	}
 }
+.search-stub {
+	width: 100%;
+	max-width: 660px;
+	margin: 40px auto 0px;
+	text-align: center;
+
+	&__title {
+		font-size: 24px;
+	}
+
+	@media (max-width: 768px) {
+		margin: 20px auto 0px;
+
+		&__title {
+			font-size: 20px;
+		}
+	}
+}
 .breadcrumb {
    padding: 40px 0 20px;
    margin: 0;
