@@ -537,6 +537,17 @@ figure figcaption {
   font-style: italic;
 }
 
+.search-stub {
+  width: 100%;
+  max-width: 660px;
+  margin: 40px auto 0px;
+  text-align: center;
+}
+
+.search-stub__title {
+  font-size: 24px;
+}
+
 .breadcrumb {
   padding: 40px 0 20px;
   margin: 0;
@@ -3004,6 +3015,14 @@ figure figcaption {
 
   .logo img {
     max-width: 45px;
+  }
+
+  .search-stub {
+    margin: 20px auto 0px;
+  }
+
+  .search-stub__title {
+    font-size: 20px;
   }
 
   .news-preview-item__text {
