@@ -528,7 +528,9 @@ body.lock {
 }
 
 figure {
-  margin: 24px 0;
+  max-width: 700px;
+  margin: 32px auto;
+  text-align: center;
 }
 
 figure img {
@@ -538,6 +540,7 @@ figure img {
 
 figure figcaption {
   margin: 8px 0px 0px 0px;
+  font-size: 14px;
   font-weight: 300;
   font-style: italic;
 }
@@ -2419,6 +2422,33 @@ figure figcaption {
 .swiper-pagination-bullets.swiper-pagination-horizontal.slider-dotts .swiper-pagination-bullet-active:hover {
   opacity: 1;
   cursor: auto;
+}
+
+.photo-slider {
+  max-width: 700px;
+  margin: 32px auto;
+}
+
+.photo-slider .slider-arrow_prev {
+  left: -100%;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(255, 255, 255, 0.001)), to(rgba(255, 255, 255, 0.5)));
+  background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0.001) 0, rgba(255, 255, 255, 0.5) 100%);
+  background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.001) 0, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.photo-slider .slider-arrow_next {
+  right: -100%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0.001)), to(rgba(255, 255, 255, 0.5)));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.001) 0, rgba(255, 255, 255, 0.5) 100%);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.001) 0, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.photo-slider:hover .slider-arrow_prev {
+  left: -20px;
+}
+
+.photo-slider:hover .slider-arrow_next {
+  right: -20px;
 }
 
 .page {
