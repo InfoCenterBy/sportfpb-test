@@ -845,9 +845,9 @@ figure figcaption {
 
 .item-employee__row i {
   position: relative;
-  -webkit-transform: translateY(-3px);
-      -ms-transform: translateY(-3px);
-          transform: translateY(-3px);
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
   font-size: 24px;
 }
 
@@ -1535,6 +1535,44 @@ figure figcaption {
 
 .contacts-sportclub__contacts .item-contacts:not(:last-child) {
   margin: 0px 0px 24px 0px;
+}
+
+.sportschool-services-contact {
+  font-weight: 500;
+  color: #151616;
+}
+
+.sportschool-services-contact i {
+  position: relative;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  font-size: 24px;
+}
+
+.sportschool-services-contact a {
+  font-weight: 600;
+  color: #151616;
+}
+
+.sportschool-services-contact a:hover {
+  color: #21388F;
+}
+
+.sportschool-services-contact:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+
+.sportschool-services-item {
+  margin: 0px 0px 40px 0px;
+}
+
+.sportschool-services-item:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.sportschool-services-item__name-service {
+  font-weight: 500;
 }
 
 .calendar {
@@ -3146,6 +3184,10 @@ figure figcaption {
   .card-sportschool__contacts {
     border-left: none;
     border-top: 2px solid #E5E5E5;
+  }
+
+  .sportschool-services__description {
+    overflow-x: auto;
   }
 
   .header-menu {
