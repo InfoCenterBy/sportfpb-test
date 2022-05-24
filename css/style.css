@@ -1567,16 +1567,16 @@ figure figcaption {
 }
 
 .services-table__header {
-  padding: 10px;
+  padding: 0px 10px 20px;
   border-bottom: 1px solid #8E8E93;
 }
 
 .services-table__item {
-  padding: 10px;
+  padding: 20px 10px;
 }
 
 .services-table__item:hover {
-  background-color: #E5E5E5;
+  background-color: #f1f1f1;
 }
 
 .services-table__name-service {
