@@ -2639,6 +2639,13 @@ figure figcaption {
   margin: 16px 0;
 }
 
+.news-post__content img {
+  display: block;
+  margin: 32px auto;
+  max-width: 920px;
+  height: auto;
+}
+
 .news-post__date {
   color: #8E8E93;
   margin: 16px 0;
