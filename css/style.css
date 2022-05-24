@@ -1566,15 +1566,20 @@ figure figcaption {
   margin: 0px 0px 24px 0px;
 }
 
-.sportschool-services-item {
-  margin: 0px 0px 40px 0px;
+.services-table__header {
+  padding: 10px;
+  border-bottom: 1px solid #8E8E93;
 }
 
-.sportschool-services-item:last-child {
-  margin: 0px 0px 0px 0px;
+.services-table__item {
+  padding: 10px;
 }
 
-.sportschool-services-item__name-service {
+.services-table__item:hover {
+  background-color: #E5E5E5;
+}
+
+.services-table__name-service {
   font-weight: 500;
 }
 
@@ -3216,7 +3221,7 @@ figure figcaption {
     border-top: 2px solid #E5E5E5;
   }
 
-  .sportschool-services__description {
+  .services-table {
     overflow-x: auto;
   }
 
