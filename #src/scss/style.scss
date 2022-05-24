@@ -272,6 +272,13 @@ body {
 		p {
 			margin: 16px 0;
 		}
+
+		img {
+			display: block;
+			margin: 32px auto;
+			max-width: 920px;
+			height: auto;
+		}
 	}
 
 	&__date {

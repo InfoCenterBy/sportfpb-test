@@ -208,3 +208,29 @@
 		}
 	}
 }
+.photo-slider {
+	max-width: 700px;
+	margin: 32px auto;
+
+	.slider-arrow {
+		&_prev {
+			left: -100%;
+			background-image: linear-gradient(-90deg,rgba(255,255,255, 0.001) 0,rgba(255, 255, 255, 0.5) 100%);
+		}
+
+		&_next {
+			right: -100%;
+			background-image: linear-gradient(90deg,rgba(255,255,255, 0.001) 0,rgba(255, 255, 255, 0.5) 100%);
+		}
+	}
+
+	&:hover {
+		.slider-arrow_prev {
+			left: -20px;
+		}
+
+		.slider-arrow_next {
+			right: -20px;
+		}
+	}
+}

@@ -148,8 +148,16 @@
       }
    }
 }
+.list-style-disc {
+	li {
+		margin: 0px 0px 8px 0px;
+		list-style-type: disc;
+	}
+}
 figure {
-	margin: 24px 0;
+	max-width: 700px;
+	margin: 32px auto;
+	text-align: center;
 
 	img {
 		max-width: 100%;
@@ -158,6 +166,7 @@ figure {
 
 	figcaption {
 		margin: 8px 0px 0px 0px;
+		font-size: 14px;
 		font-weight: 300;
 		font-style: italic;
 	}
@@ -408,7 +417,6 @@ figure {
 	}
 }
 .item-employee {
-   // height: 100%;
    border: 2px solid $color-gray-light;
    display: flex;
    margin: 0px 0px 32px 0px;
@@ -451,7 +459,7 @@ figure {
 
       i {
          position: relative;
-         transform: translateY(-3px);
+         transform: translateY(-5px);
          font-size: 24px;
       }
 
@@ -776,6 +784,68 @@ figure {
    tbody tr td:first-child {
       font-weight: 600;
    }
+
+	ul {
+		padding-left: 24px;
+		li {
+			list-style: disc;
+		}
+
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
+
+	p:last-child {
+		margin: 0px;
+	}
+
+	a  {
+		font-weight: 600;
+		color: $color-black;
+
+		&:hover {
+			color: $color-blue;
+		}
+	}
+
+}
+.table-line {
+	overflow-x: auto;
+
+	table {
+		width: 100%;
+	}
+	thead tr {
+		background-color: $color-blue;
+		border: 1px solid $color-blue;
+		color: $color-white;
+	}
+
+   th,
+   td {
+      padding: 24px;
+
+		@media (max-width: 1200px) {
+			padding: 16px;
+		}
+   }
+
+   tbody td,
+	tbody th {
+		border: 1px solid $color-blue;
+   }
+
+	ul {
+		padding-left: 24px;
+		li {
+			list-style: disc;
+		}
+
+		&:last-child {
+			margin: 0px 0px 0px 0px;
+		}
+	}
 
 	p:last-child {
 		margin: 0px;
@@ -1148,5 +1218,50 @@ figure {
 				margin: 0px 0px 24px 0px;
 			}
 		}
+	}
+}
+.sportschool-services-contact {
+	font-weight: 500;
+	color: $color-black;
+
+	i {
+		position: relative;
+		transform: translateY(-5px);
+		font-size: 24px;
+	}
+
+	a {
+		font-weight: 600;
+		color: $color-black;
+
+		&:hover {
+			color: $color-blue;
+		}
+	}
+
+	&:not(:last-child) {
+		margin: 0px 0px 24px 0px;
+	}
+}
+.services-table {
+	@media (max-width: $md3+px) {
+		overflow-x: auto;
+	}
+
+	&__header {
+		padding: 0px 10px 20px;
+		border-bottom: 1px solid $color-gray;
+	}
+
+	&__item {
+		padding: 20px 10px;
+
+		&:hover {
+			background-color: #f1f1f1;
+		}
+	}
+
+	&__name-service {
+		font-weight: 500;
 	}
 }

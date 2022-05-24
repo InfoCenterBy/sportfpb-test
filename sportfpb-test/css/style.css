@@ -522,8 +522,15 @@ body.lock {
   width: 100%;
 }
 
+.list-style-disc li {
+  margin: 0px 0px 8px 0px;
+  list-style-type: disc;
+}
+
 figure {
-  margin: 24px 0;
+  max-width: 700px;
+  margin: 32px auto;
+  text-align: center;
 }
 
 figure img {
@@ -533,6 +540,7 @@ figure img {
 
 figure figcaption {
   margin: 8px 0px 0px 0px;
+  font-size: 14px;
   font-weight: 300;
   font-style: italic;
 }
@@ -840,9 +848,9 @@ figure figcaption {
 
 .item-employee__row i {
   position: relative;
-  -webkit-transform: translateY(-3px);
-      -ms-transform: translateY(-3px);
-          transform: translateY(-3px);
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
   font-size: 24px;
 }
 
@@ -1133,6 +1141,18 @@ figure figcaption {
   font-weight: 600;
 }
 
+.table-info-services ul {
+  padding-left: 24px;
+}
+
+.table-info-services ul li {
+  list-style: disc;
+}
+
+.table-info-services ul:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
 .table-info-services p:last-child {
   margin: 0px;
 }
@@ -1143,6 +1163,55 @@ figure figcaption {
 }
 
 .table-info-services a:hover {
+  color: #21388F;
+}
+
+.table-line {
+  overflow-x: auto;
+}
+
+.table-line table {
+  width: 100%;
+}
+
+.table-line thead tr {
+  background-color: #21388F;
+  border: 1px solid #21388F;
+  color: #FCFCFC;
+}
+
+.table-line th,
+.table-line td {
+  padding: 24px;
+}
+
+.table-line tbody td,
+.table-line tbody th {
+  border: 1px solid #21388F;
+}
+
+.table-line ul {
+  padding-left: 24px;
+}
+
+.table-line ul li {
+  list-style: disc;
+}
+
+.table-line ul:last-child {
+  margin: 0px 0px 0px 0px;
+}
+
+.table-line p:last-child {
+  margin: 0px;
+}
+
+.table-line a {
+  font-weight: 600;
+  color: #151616;
+}
+
+.table-line a:hover {
   color: #21388F;
 }
 
@@ -1469,6 +1538,49 @@ figure figcaption {
 
 .contacts-sportclub__contacts .item-contacts:not(:last-child) {
   margin: 0px 0px 24px 0px;
+}
+
+.sportschool-services-contact {
+  font-weight: 500;
+  color: #151616;
+}
+
+.sportschool-services-contact i {
+  position: relative;
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
+  font-size: 24px;
+}
+
+.sportschool-services-contact a {
+  font-weight: 600;
+  color: #151616;
+}
+
+.sportschool-services-contact a:hover {
+  color: #21388F;
+}
+
+.sportschool-services-contact:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+
+.services-table__header {
+  padding: 0px 10px 20px;
+  border-bottom: 1px solid #8E8E93;
+}
+
+.services-table__item {
+  padding: 20px 10px;
+}
+
+.services-table__item:hover {
+  background-color: #f1f1f1;
+}
+
+.services-table__name-service {
+  font-weight: 500;
 }
 
 .calendar {
@@ -2317,6 +2429,33 @@ figure figcaption {
   cursor: auto;
 }
 
+.photo-slider {
+  max-width: 700px;
+  margin: 32px auto;
+}
+
+.photo-slider .slider-arrow_prev {
+  left: -100%;
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(0, rgba(255, 255, 255, 0.001)), to(rgba(255, 255, 255, 0.5)));
+  background-image: -o-linear-gradient(right, rgba(255, 255, 255, 0.001) 0, rgba(255, 255, 255, 0.5) 100%);
+  background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.001) 0, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.photo-slider .slider-arrow_next {
+  right: -100%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(255, 255, 255, 0.001)), to(rgba(255, 255, 255, 0.5)));
+  background-image: -o-linear-gradient(left, rgba(255, 255, 255, 0.001) 0, rgba(255, 255, 255, 0.5) 100%);
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.001) 0, rgba(255, 255, 255, 0.5) 100%);
+}
+
+.photo-slider:hover .slider-arrow_prev {
+  left: -20px;
+}
+
+.photo-slider:hover .slider-arrow_next {
+  right: -20px;
+}
+
 .page {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -2498,6 +2637,13 @@ figure figcaption {
 
 .news-post__content p {
   margin: 16px 0;
+}
+
+.news-post__content img {
+  display: block;
+  margin: 32px auto;
+  max-width: 920px;
+  height: auto;
 }
 
 .news-post__date {
@@ -2736,6 +2882,11 @@ figure figcaption {
 @media (max-width: 1200px) {
   .table-info-services th,
   .table-info-services td {
+    padding: 16px;
+  }
+
+  .table-line th,
+  .table-line td {
     padding: 16px;
   }
 
@@ -3075,6 +3226,10 @@ figure figcaption {
   .card-sportschool__contacts {
     border-left: none;
     border-top: 2px solid #E5E5E5;
+  }
+
+  .services-table {
+    overflow-x: auto;
   }
 
   .header-menu {

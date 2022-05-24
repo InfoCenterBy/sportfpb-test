@@ -281,6 +281,28 @@ if (document.querySelector('.slider-gallery')) {
 		},
 	});
 }
+if (document.querySelector('.photo-slider')) {
+	new Swiper('.photo-slider', {
+		observer: true,
+		watchOverflow: true,
+		observeParents: true,
+		slidesPerView: 1,
+		loop: true,
+		parallax: true,
+		autoHeight: true,
+		mousewheel: {
+			sensitive: 1
+		},
+		pagination: {
+			el: '.slider-dotts',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.slider-arrow_next',
+			prevEl: '.slider-arrow_prev',
+		}
+	});
+}
 if (document.querySelector('.slider-partners__wrapper')) {
 	new Swiper('.slider-partners__wrapper', {
 		observer: true,
