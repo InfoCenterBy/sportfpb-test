@@ -1104,7 +1104,7 @@ figure {
 	display: flex;
 	transition: border-color 0.3s ease 0s;
 
-	@media (max-width: $md3+px) {
+	@media (max-width: 1200px) {
 		display: block;
 	}
 
@@ -1124,7 +1124,7 @@ figure {
 	}
 
 	&__info {
-		flex: 0 1 65%;
+		flex: 0 0 50%;
 		padding: 24px;
 		font-size: 14px;
 		color: $color-gray;
@@ -1141,12 +1141,12 @@ figure {
 	}
 
 	&__contacts {
-		flex: 0 1 35%;
+		flex: 0 0 50%;
 		padding: 24px;
 		border-left: 2px solid $color-gray-light;
 		transition: border-color 0.3s ease 0s;
 
-		@media (max-width: $md3+px) {
+		@media (max-width: 1200px) {
 			border-left: none;
 			border-top: 2px solid $color-gray-light;
 		}
@@ -1204,12 +1204,15 @@ figure {
 		iframe {
 			width: 100%;
 			height: 100%;
-
 		}
 
-		@media (max-width: $md4+px) {
-			height: 380px;
-		}
+	  .bx-yandex-view-layout,
+	  .bx-yandex-view-map,
+	  .bx-yandex-map,
+	  .ymaps-glass-pane,
+	  .ymaps-map {
+			height: 100% !important;
+	  }
 	}
 
 	&__contacts {

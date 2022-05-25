@@ -230,7 +230,6 @@ if (document.querySelector('.slider-news__wrapper')) {
 		watchOverflow: true,
 		observeParents: true,
 		slidesPerView: 1,
-		spaceBetween: 30,
 		parallax: true,
 		spaceBetween: 24,
 		speed: 800,
@@ -312,7 +311,6 @@ if (document.querySelector('.slider-partners__wrapper')) {
 		parallax: true,
 		spaceBetween: 24,
 		speed: 800,
-		//},
 		mousewheel: {
 			sensitive: 1
 		},
@@ -321,7 +319,6 @@ if (document.querySelector('.slider-partners__wrapper')) {
 			prevEl: '.slider-partners__arrow_prev',
 		},
 		breakpoints: {
-
 			565: {
 				slidesPerView: 2,
 			},
@@ -1773,57 +1770,4 @@ if (sidebarBlock && $(window).width() > 992) {
    });
    sidebar.updateSticky();
 }
-
-// ===========  Calendar ===========================
-var $calendar;
-$(document).ready(function () {
-   let container = $('#calendarFosm').simpleCalendar({
-      fixedStartDay: 1, // begin weeks by sunday
-      disableEmptyDetails: true,
-      events: [
-         // generate new event after tomorrow for one hour
-         {
-            startDate: '2022-04-14',
-            endDate: '2022-04-14',
-            place: 'г. Гродно',
-            summary:
-               'Республиканская летняя спартакиада работников лесного хозяйства',
-         },
-         {
-            startDate: '2022-04-15',
-            endDate: '2022-04-17',
-            place: 'г. Гродно',
-            summary:
-               'Республиканская летняя спартакиада работников лесного хозяйства',
-         },
-         {
-            startDate: '2022-04-14',
-            endDate: '2022-04-14',
-            place: 'г. Минск',
-            summary: 'Областные соревнования на лучшего инструктора-методиста',
-         },
-         {
-            startDate: '2022-04-14',
-            endDate: '2022-04-15',
-            place: 'г. Минск',
-            summary: 'Областные соревнования на лучшего инструктора-методиста',
-         },
-         {
-            startDate: '2022-04-14',
-            endDate: '2022-04-21',
-            place: 'г. Минск',
-            summary: 'Областные соревнования на лучшего инструктора-методиста',
-         },
-         {
-            startDate: '2022-04-22',
-            endDate: '2022-04-23',
-            place: 'г. Брест',
-            summary:
-               'Легкая атлетика в помещении(юноши и девушки (2008–2009 г.р.)',
-         },
-      ],
-   });
-
-   $calendar = container.data('plugin_simpleCalendar');
-});
 ;
