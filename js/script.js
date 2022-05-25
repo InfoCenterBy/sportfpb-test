@@ -230,7 +230,6 @@ if (document.querySelector('.slider-news__wrapper')) {
 		watchOverflow: true,
 		observeParents: true,
 		slidesPerView: 1,
-		spaceBetween: 30,
 		parallax: true,
 		spaceBetween: 24,
 		speed: 800,
@@ -312,7 +311,6 @@ if (document.querySelector('.slider-partners__wrapper')) {
 		parallax: true,
 		spaceBetween: 24,
 		speed: 800,
-		//},
 		mousewheel: {
 			sensitive: 1
 		},
@@ -321,7 +319,6 @@ if (document.querySelector('.slider-partners__wrapper')) {
 			prevEl: '.slider-partners__arrow_prev',
 		},
 		breakpoints: {
-
 			565: {
 				slidesPerView: 2,
 			},
