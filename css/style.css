@@ -3,8 +3,8 @@
 @use "sass:math";
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?rhnuqn");
-  src: url("../fonts/icomoon.eot?rhnuqn#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rhnuqn") format("truetype"), url("../fonts/icomoon.woff?rhnuqn") format("woff"), url("../fonts/icomoon.svg?rhnuqn#icomoon") format("svg");
+  src: url("../fonts/icomoon.woff?rhnuqn");
+  src: url("../fonts/icomoon.woff?rhnuqn#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rhnuqn") format("truetype"), url("../fonts/icomoon.woff?rhnuqn") format("woff"), url("../fonts/icomoon.svg?rhnuqn#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
