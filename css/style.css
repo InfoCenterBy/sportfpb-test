@@ -1574,6 +1574,10 @@ figure figcaption {
   margin: 0px 0px 24px 0px;
 }
 
+.services-table__body {
+  min-width: 700px;
+}
+
 .services-table__header {
   padding: 0px 10px 20px;
   border-bottom: 1px solid #8E8E93;
