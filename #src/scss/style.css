@@ -2,8 +2,8 @@
 @use "sass:math";
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?rhnuqn");
-  src: url("../fonts/icomoon.eot?rhnuqn#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rhnuqn") format("truetype"), url("../fonts/icomoon.woff?rhnuqn") format("woff"), url("../fonts/icomoon.svg?rhnuqn#icomoon") format("svg");
+  src: url("../fonts/icomoon.woff?rhnuqn");
+  src: url("../fonts/icomoon.woff?rhnuqn#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?rhnuqn") format("truetype"), url("../fonts/icomoon.woff?rhnuqn") format("woff"), url("../fonts/icomoon.svg?rhnuqn#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1659,7 +1659,7 @@ figure figcaption {
   transition: border-color 0.3s ease 0s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .card-sportschool {
     display: block;
   }
@@ -1683,8 +1683,8 @@ figure figcaption {
 
 .card-sportschool__info {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 65%;
-          flex: 0 1 65%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   padding: 24px;
   font-size: 14px;
   color: #8E8E93;
@@ -1707,15 +1707,15 @@ figure figcaption {
 
 .card-sportschool__contacts {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 35%;
-          flex: 0 1 35%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
   padding: 24px;
   border-left: 2px solid #E5E5E5;
   -webkit-transition: border-color 0.3s ease 0s;
   transition: border-color 0.3s ease 0s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .card-sportschool__contacts {
     border-left: none;
     border-top: 2px solid #E5E5E5;
@@ -1786,10 +1786,12 @@ figure figcaption {
   height: 100%;
 }
 
-@media (max-width: 576px) {
-  .contacts-sportclub__map {
-    height: 380px;
-  }
+.contacts-sportclub__map .bx-yandex-view-layout,
+.contacts-sportclub__map .bx-yandex-view-map,
+.contacts-sportclub__map .bx-yandex-map,
+.contacts-sportclub__map .ymaps-glass-pane,
+.contacts-sportclub__map .ymaps-map {
+  height: 100% !important;
 }
 
 .contacts-sportclub__contacts .item-contacts:not(:last-child) {
@@ -3257,6 +3259,7 @@ figure figcaption {
 .news-post__content img {
   display: block;
   margin: 32px auto;
+  width: 100%;
   max-width: 920px;
   height: auto;
 }

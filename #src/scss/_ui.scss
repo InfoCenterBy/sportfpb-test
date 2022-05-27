@@ -1251,6 +1251,10 @@ figure {
 		overflow-x: auto;
 	}
 
+	&__body {
+		min-width: 700px;
+	}
+
 	&__header {
 		padding: 0px 10px 20px;
 		border-bottom: 1px solid $color-gray;
