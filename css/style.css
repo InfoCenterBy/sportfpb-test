@@ -1729,6 +1729,14 @@ figure figcaption {
   background: #21388f;
 }
 
+.calendar .day.has-event.pass-event {
+  text-decoration: line-through;
+}
+
+.calendar .day.has-event.pass-event::after {
+  background: #cbd1d2;
+}
+
 .calendar .day.disabled {
   cursor: default;
 }
