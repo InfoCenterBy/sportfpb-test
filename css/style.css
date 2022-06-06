@@ -1215,6 +1215,34 @@ figure figcaption {
   color: #21388F;
 }
 
+.card-link {
+  display: block;
+  height: 100%;
+  padding: 48px 16px;
+  font-size: 18px;
+  color: #21388F;
+  font-weight: 600;
+  background-color: #ffffff;
+  border: 1px solid #21388F;
+  position: relative;
+  text-align: center;
+}
+
+.card-link i {
+  font-size: 28px;
+  color: #21388F;
+  position: absolute;
+  top: 5px;
+  right: 21px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.card-link:hover i {
+  right: 16px;
+}
+
 .card-download {
   height: 100%;
   color: #151616;
@@ -1553,6 +1581,24 @@ figure figcaption {
 
 .contacts-sportclub__contacts .item-contacts:not(:last-child) {
   margin: 0px 0px 24px 0px;
+}
+
+.sportschool-services ul {
+  margin-bottom: 0;
+}
+
+.sportschool-services ul li:not(:last-child) {
+  margin: 0px 0px 24px 0px;
+}
+
+.sportschool-services ul li a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #151616;
+}
+
+.sportschool-services ul li a:hover {
+  color: #21388F;
 }
 
 .sportschool-services-contact {
@@ -3169,6 +3215,16 @@ figure figcaption {
 }
 
 @media screen and (max-width: 992px) {
+  .card-link {
+    border-color: #21388F;
+  }
+
+  .card-link i {
+    opacity: 1;
+    overflow: visible;
+    right: 16px;
+  }
+
   .card-download {
     border-color: #21388F;
   }
