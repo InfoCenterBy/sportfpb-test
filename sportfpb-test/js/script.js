@@ -348,7 +348,7 @@ if (document.querySelector('.slider-partners__wrapper')) {
   var pluginName = "simpleCalendar",
     defaults = {
       months1: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-      months: ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'], 
+      months: ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'],
       days: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'], //string of days starting from sunday
       displayYear: true, // display year in header
       fixedStartDay: true, // Week begin always by monday or by day set by number 0 = sunday, 7 = saturday, false = month always begin by first day of the month
@@ -466,9 +466,14 @@ if (document.querySelector('.slider-partners__wrapper')) {
           var todayEvents = plugin.getDateEvents(day);
 
           if (todayEvents.length && plugin.settings.displayEvent) {
+				 console.log(todayEvents);
+
             $day.addClass(plugin.settings.disableEventDetails ? "has-event disabled" : "has-event");
           } else {
             $day.addClass(plugin.settings.disableEmptyDetails ? "disabled" : "");
+          }
+			 if (day.toDateString() !== (new Date).toDateString() && day.getTime() < (new Date).getTime()) {
+            $day.addClass("pass-event");
           }
 
           // associate some data available from the onDayCreate callback
