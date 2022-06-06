@@ -1314,6 +1314,13 @@ figure figcaption {
   margin: 0px 0px 8px 0px;
 }
 
+.item-achievement__description img {
+  display: block;
+  margin: 24px 0;
+  max-width: 100%;
+  height: auto;
+}
+
 .item-achievement:not(:last-child) {
   margin: 0px 0px 24px 0px;
 }
