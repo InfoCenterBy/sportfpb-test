@@ -861,6 +861,44 @@ figure {
 	}
 
 }
+.card-link {
+	display: block;
+	height: 100%;
+	padding: 48px 16px;
+	font-size: 18px;
+	color: $color-blue;
+	font-weight: 600;
+	background-color: #ffffff;
+	border: 1px solid $color-blue;
+	position: relative;
+	text-align: center;
+
+	i {
+		font-size: 28px;
+		color: $color-blue;
+		position: absolute;
+		top: 5px;
+		right: 21px;
+		transition: all 0.3s ease 0s;
+	}
+
+	&:hover {
+
+		i {
+			right: 16px;
+		}
+	}
+
+	@media screen and (max-width: $md2+px) {
+		border-color: $color-blue;
+
+		i {
+			opacity: 1;
+			overflow: visible;
+			right: 16px;
+		}
+	}
+}
 .card-download {
 	height: 100%;
 	color: $color-black;
@@ -1226,6 +1264,27 @@ figure {
 		.item-contacts {
 			&:not(:last-child) {
 				margin: 0px 0px 24px 0px;
+			}
+		}
+	}
+}
+.sportschool-services {
+	ul {
+		margin-bottom: 0;
+
+		li {
+			&:not(:last-child) {
+				margin: 0px 0px 24px 0px;
+			}
+
+			a {
+				font-size: 18px;
+				font-weight: 600;
+				color: $color-black;
+
+				&:hover {
+					color: $color-blue;
+				}
 			}
 		}
 	}
