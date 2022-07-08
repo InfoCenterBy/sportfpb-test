@@ -263,6 +263,18 @@ body {
 		height: 380px;
 	}
 }
+.sportclub {
+	p {
+		margin: 16px 0;
+	}
+
+	img {
+		display: block;
+		margin: 32px auto;
+		max-width: 100%;
+		height: auto;
+	}
+}
 .news-post {
 	&__content {
 		width: 100%;
@@ -275,9 +287,8 @@ body {
 
 		img {
 			display: block;
-			margin-top: 32px;
-			margin-bottom: 32px;
-			max-width: 920px;
+			margin: 32px auto;
+			max-width: 100%;
 			height: auto;
 		}
 	}

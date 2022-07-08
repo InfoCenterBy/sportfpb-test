@@ -2702,6 +2702,13 @@ figure figcaption {
   height: 100%;
 }
 
+.sportclub img {
+  display: block;
+  margin: 32px auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .news-post__content {
   width: 100%;
   max-width: 1100px;
@@ -2714,9 +2721,8 @@ figure figcaption {
 
 .news-post__content img {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  max-width: 920px;
+  margin: 32px auto;
+  max-width: 100%;
   height: auto;
 }
 
