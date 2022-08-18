@@ -1291,9 +1291,20 @@ figure figcaption {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
 .card-download__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   display: block;
   margin: 24px 0;
   color: #151616;
@@ -2702,6 +2713,17 @@ figure figcaption {
   height: 100%;
 }
 
+.sportclub p {
+  margin: 16px 0;
+}
+
+.sportclub img {
+  display: block;
+  margin: 32px auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .news-post__content {
   width: 100%;
   max-width: 1100px;
@@ -2714,9 +2736,8 @@ figure figcaption {
 
 .news-post__content img {
   display: block;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  max-width: 920px;
+  margin: 32px auto;
+  max-width: 100%;
   height: auto;
 }
 
