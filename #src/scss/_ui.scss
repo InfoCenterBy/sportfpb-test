@@ -952,10 +952,14 @@ figure {
    }
 
    &__content {
-		flex: 1 1 auto;
+	   flex: 1 1 auto;
+	   display: flex;
+	   flex-direction: column;
+	   height: 100%;
 	}
 
    &__title {
+	   flex: 1 1 auto;
 		display: block;
 		margin: 24px 0;
 		color: $color-black;
